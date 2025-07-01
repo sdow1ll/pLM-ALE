@@ -1,0 +1,1 @@
+This is the log-likelihood ratio values that were inferred from the pretrained pLMs on the antibody data. The first column of each csv file denotes all amino acids. The columns proceeding onwards correspond to the LLR at each position in the protein sequence for all AAs.
