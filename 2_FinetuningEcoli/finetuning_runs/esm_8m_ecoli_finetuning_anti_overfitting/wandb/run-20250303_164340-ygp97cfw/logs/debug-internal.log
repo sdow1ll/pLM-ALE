@@ -1,0 +1,15 @@
+{"time":"2025-03-03T16:43:41.025023437-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"runs/esm_8m_ecoli_finetuning_anti_overfitting/wandb/run-20250303_164340-ygp97cfw/logs/debug-core.log"}
+{"time":"2025-03-03T16:43:41.144805481-05:00","level":"INFO","msg":"created new stream","id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:41.144835707-05:00","level":"INFO","msg":"stream: started","id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:41.144924986-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:41.144981608-05:00","level":"INFO","msg":"sender: started","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:41.14502686-05:00","level":"INFO","msg":"handler: started","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:41.398417872-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T16:43:44.508582889-05:00","level":"INFO","msg":"stream: closing","id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:44.508663822-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T16:43:44.509426584-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-03T16:43:44.9512787-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-03T16:43:45.068750661-05:00","level":"INFO","msg":"handler: closed","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:45.068794037-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:45.068807968-05:00","level":"INFO","msg":"sender: closed","stream_id":"ygp97cfw"}
+{"time":"2025-03-03T16:43:45.08395445-05:00","level":"INFO","msg":"stream: closed","id":"ygp97cfw"}

@@ -1,0 +1,7 @@
+{"time":"2025-04-14T17:15:17.544664651Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/progen2_151m_ecoli_finetuning_1/wandb/run-20250414_171517-vxg0z70a/logs/debug-core.log"}
+{"time":"2025-04-14T17:15:17.781406418Z","level":"INFO","msg":"created new stream","id":"vxg0z70a"}
+{"time":"2025-04-14T17:15:17.781452073Z","level":"INFO","msg":"stream: started","id":"vxg0z70a"}
+{"time":"2025-04-14T17:15:17.781528686Z","level":"INFO","msg":"writer: Do: started","stream_id":"vxg0z70a"}
+{"time":"2025-04-14T17:15:17.781566125Z","level":"INFO","msg":"sender: started","stream_id":"vxg0z70a"}
+{"time":"2025-04-14T17:15:17.781592324Z","level":"INFO","msg":"handler: started","stream_id":"vxg0z70a"}
+{"time":"2025-04-14T17:15:18.054164537Z","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,11 @@
+{"time":"2025-03-03T15:37:12.994430767-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"runs/esm_8m_ecoli_finetuning_1/wandb/run-20250303_153712-owrewcbt/logs/debug-core.log"}
+{"time":"2025-03-03T15:37:13.11387881-05:00","level":"INFO","msg":"created new stream","id":"owrewcbt"}
+{"time":"2025-03-03T15:37:13.113908006-05:00","level":"INFO","msg":"stream: started","id":"owrewcbt"}
+{"time":"2025-03-03T15:37:13.114003472-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"owrewcbt"}
+{"time":"2025-03-03T15:37:13.114147311-05:00","level":"INFO","msg":"handler: started","stream_id":"owrewcbt"}
+{"time":"2025-03-03T15:37:13.114107965-05:00","level":"INFO","msg":"sender: started","stream_id":"owrewcbt"}
+{"time":"2025-03-03T15:37:13.289147674-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T16:28:58.722270157-05:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sdowell1/FIX_esm_8m_ecoli_finetuning/owrewcbt/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-03-03T16:30:27.468623326-05:00","level":"INFO","msg":"stream: closing","id":"owrewcbt"}
+{"time":"2025-03-03T16:30:27.468649485-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T16:30:27.469331274-05:00","level":"INFO","msg":"Stopped system monitor"}

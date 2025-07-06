@@ -1,0 +1,7 @@
+{"time":"2025-03-22T19:38:25.482363584Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/esm_150m_ecoli_finetuning_1/wandb/run-20250322_193825-bcpke418/logs/debug-core.log"}
+{"time":"2025-03-22T19:38:26.609557882Z","level":"INFO","msg":"created new stream","id":"bcpke418"}
+{"time":"2025-03-22T19:38:26.609608756Z","level":"INFO","msg":"stream: started","id":"bcpke418"}
+{"time":"2025-03-22T19:38:26.609638231Z","level":"INFO","msg":"writer: Do: started","stream_id":"bcpke418"}
+{"time":"2025-03-22T19:38:26.609662206Z","level":"INFO","msg":"sender: started","stream_id":"bcpke418"}
+{"time":"2025-03-22T19:38:26.609715015Z","level":"INFO","msg":"handler: started","stream_id":"bcpke418"}
+{"time":"2025-03-22T19:38:26.838725202Z","level":"INFO","msg":"Starting system monitor"}

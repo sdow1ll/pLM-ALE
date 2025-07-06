@@ -1,0 +1,75 @@
+2025-03-24 18:59:48,216 INFO: Training configuration saved to runs/progen2_151m_ecoli_finetuning_1/train_config.yaml
+2025-03-24 18:59:49,138 INFO: LoRA integration complete for the ProGen model.
+2025-03-24 18:59:49,215 INFO: Loaded 7489 training and 1404 evaluation sequences.
+2025-03-24 18:59:49,215 INFO: Using causal language modeling (CLM) data collator for ProGen model.
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+  0%|                                                                                          | 0/23400 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 588, in <module>
+    main()
+    ~~~~^^
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 561, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+        args=args,
+    ...<2 lines>...
+        ignore_keys_for_eval=ignore_keys_for_eval,
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 2500, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 5180, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+                      ~~~~^^^^^^^^^^^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/accelerate/data_loader.py", line 566, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 708, in __next__
+    data = self._next_data()
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1480, in _next_data
+    return self._process_data(data)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1505, in _process_data
+    data.reraise()
+    ~~~~~~~~~~~~^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 193, in __call__
+    batch = self.tokenizer(
+        examples,
+    ...<6 lines>...
+        return_special_tokens_mask=self.model_type in ["mlm", "auto"]
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2877, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2965, in _call_one
+    return self.batch_encode_plus(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        batch_text_or_text_pairs=batch_text_or_text_pairs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<17 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 3158, in batch_encode_plus
+    padding_strategy, truncation_strategy, max_length, kwargs = self._get_padding_truncation_strategies(
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        padding=padding,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2779, in _get_padding_truncation_strategies
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Asking to pad but the tokenizer does not have a padding token. Please select a token to use as `pad_token` `(tokenizer.pad_token = tokenizer.eos_token e.g.)` or add a new pad token via `tokenizer.add_special_tokens({'pad_token': '[PAD]'})`.

@@ -1,0 +1,42 @@
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_setup.py:_flush():67] Configure stats pid to 2570355
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_setup.py:_flush():67] Loading settings from /home/idies/.config/wandb/settings
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_setup.py:_flush():67] Loading settings from /home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/wandb/settings
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_init.py:setup_run_log_directory():647] Logging user logs to runs/esm_8m_ecoli_finetuning/wandb/run-20250303_153539-x1t6pv4o/logs/debug.log
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to runs/esm_8m_ecoli_finetuning/wandb/run-20250303_153539-x1t6pv4o/logs/debug-internal.log
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_init.py:init():761] calling init triggers
+2025-03-03 15:35:39,709 INFO    MainThread:2570355 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-03 15:35:39,710 INFO    MainThread:2570355 [wandb_init.py:init():784] starting backend
+2025-03-03 15:35:39,710 INFO    MainThread:2570355 [wandb_init.py:init():788] sending inform_init request
+2025-03-03 15:35:39,711 INFO    MainThread:2570355 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-03 15:35:39,712 INFO    MainThread:2570355 [wandb_init.py:init():803] backend started and connected
+2025-03-03 15:35:39,715 INFO    MainThread:2570355 [wandb_init.py:init():896] updated telemetry
+2025-03-03 15:35:39,716 INFO    MainThread:2570355 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-03 15:35:39,977 INFO    MainThread:2570355 [wandb_init.py:init():995] starting run threads in backend
+2025-03-03 15:35:40,123 INFO    MainThread:2570355 [wandb_run.py:_console_start():2377] atexit reg
+2025-03-03 15:35:40,123 INFO    MainThread:2570355 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-03 15:35:40,124 INFO    MainThread:2570355 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-03 15:35:40,124 INFO    MainThread:2570355 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-03-03 15:35:40,125 INFO    MainThread:2570355 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-03 15:35:40,127 INFO    MainThread:2570355 [wandb_run.py:_config_callback():1261] config_cb None None {'train_config': {'train_path': '/home/idies/workspace/Storage/sdowell/persistent/ALEdb/split_data/train.fasta', 'eval_path': '/home/idies/workspace/Storage/sdowell/persistent/ALEdb/split_data/valid.fasta', 'training_args': {'output_dir': 'runs/esm_8m_ecoli_finetuning', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'STEPS', 'prediction_loss_only': False, 'per_device_train_batch_size': 64, 'per_device_eval_batch_size': 64, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 0.0001, 'weight_decay': 0.01, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 10000, 'max_steps': -1, 'lr_scheduler_type': 'COSINE', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.0, 'warmup_steps': 1000, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': 'runs/esm_8m_ecoli_finetuning/runs/Mar03_15-35-36_4f1d43ae-f71f-11ef-9a20-0a580a810034-78559fc9b6-288qn', 'logging_strategy': 'STEPS', 'logging_first_step': False, 'logging_steps': 500, 'logging_nan_inf_filter': True, 'save_strategy': 'STEPS', 'save_steps': 500, 'save_total_limit': 1, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': False, 'fp16': True, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': 500, 'dataloader_num_workers': 4, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'runs/esm_8m_ecoli_finetuning', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False}, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'ADAMW_TORCH', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard', 'wandb'], 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'EVERY_SAVE', 'hub_token': None, 'hub_private_repo': None, 'hub_always_push': False, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'evaluation_strategy': 'steps', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, '_n_gpu': 4, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'eval_use_gather_object': False, 'average_tokens_across_devices': False}, 'base_model': 'facebook/esm2_t6_8M_UR50D', 'wandb_project': 'FIX_esm_8m_ecoli_finetuning'}}
+2025-03-03 15:35:41,557 WARNING MsgRouterThr:2570355 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-03-03 15:35:41,558 INFO    MsgRouterThr:2570355 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.

@@ -1,0 +1,84 @@
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 4 of 5
+Unfrozen: Transformer layer 5 of 5
+Trainable parameters: 2,579,873 of 7,840,794 (32.90%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([320]), requires_grad=True
+Resuming training from checkpoint: runs/esm_8m_ecoli_finetuning/checkpoint-10
+Warning: 1 keys missing from checkpoint. First few: ['lm_head.decoder.weight']
+These parameters will retain their initialization values.
+There were missing keys in the checkpoint model loaded: ['lm_head.decoder.weight'].
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 517, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 481, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2396, in _inner_training_loop
+    self._load_optimizer_and_scheduler(resume_from_checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3422, in _load_optimizer_and_scheduler
+    self.optimizer.load_state_dict(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+    return fn(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/optim/optimizer.py", line 874, in load_state_dict
+    raise ValueError(
+ValueError: loaded state dict has a different number of parameter groups
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 517, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 481, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2396, in _inner_training_loop
+    self._load_optimizer_and_scheduler(resume_from_checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3422, in _load_optimizer_and_scheduler
+    self.optimizer.load_state_dict(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+    return fn(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/optim/optimizer.py", line 874, in load_state_dict
+    raise ValueError(
+ValueError: loaded state dict has a different number of parameter groups

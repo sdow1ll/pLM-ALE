@@ -1,0 +1,19 @@
+2025-03-16 23:59:17,475 INFO: Training configuration saved to runs/esm_650m_ecoli_finetuning/train_config.yaml
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 521, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 404, in main
+    model = get_peft_model(model, lora_config)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/mapping.py", line 222, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/peft_model.py", line 1684, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/peft_model.py", line 176, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/tuners/lora/model.py", line 141, in __init__
+    super().__init__(model, config, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/tuners/tuners_utils.py", line 184, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/peft/tuners/tuners_utils.py", line 520, in inject_adapter
+    raise ValueError(error_msg)
+ValueError: Target modules {'k_proj', 'v_proj'} not found in the base model. Please check the target modules and try again.

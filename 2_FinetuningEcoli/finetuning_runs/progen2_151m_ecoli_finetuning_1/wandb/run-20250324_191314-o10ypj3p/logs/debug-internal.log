@@ -1,0 +1,19 @@
+{"time":"2025-03-24T19:13:15.076846433Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/progen2_151m_ecoli_finetuning_1/wandb/run-20250324_191314-o10ypj3p/logs/debug-core.log"}
+{"time":"2025-03-24T19:13:15.200933151Z","level":"INFO","msg":"created new stream","id":"o10ypj3p"}
+{"time":"2025-03-24T19:13:15.201001268Z","level":"INFO","msg":"stream: started","id":"o10ypj3p"}
+{"time":"2025-03-24T19:13:15.201031775Z","level":"INFO","msg":"writer: Do: started","stream_id":"o10ypj3p"}
+{"time":"2025-03-24T19:13:15.201114539Z","level":"INFO","msg":"sender: started","stream_id":"o10ypj3p"}
+{"time":"2025-03-24T19:13:15.201038558Z","level":"INFO","msg":"handler: started","stream_id":"o10ypj3p"}
+{"time":"2025-03-24T19:13:15.431993594Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-24T19:16:15.539254336Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-24T20:44:30.603923588Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-24T23:29:17.850923032Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/sdowell1/progen2_151m_ecoli_finetuning/o10ypj3p/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-03-25T00:55:57.787826484Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T00:55:57.788694615Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T00:55:58.154535443Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T00:55:58.225555126Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-25T00:55:58.232332286Z","level":"INFO","msg":"stream: closing","id":"o10ypj3p"}
+{"time":"2025-03-25T00:55:58.232360158Z","level":"INFO","msg":"handler: closed","stream_id":"o10ypj3p"}
+{"time":"2025-03-25T00:55:58.232380065Z","level":"INFO","msg":"writer: Close: closed","stream_id":"o10ypj3p"}
+{"time":"2025-03-25T00:55:58.232388491Z","level":"INFO","msg":"sender: closed","stream_id":"o10ypj3p"}
+{"time":"2025-03-25T00:55:58.233375804Z","level":"INFO","msg":"stream: closed","id":"o10ypj3p"}

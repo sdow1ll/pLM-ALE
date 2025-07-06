@@ -1,0 +1,61 @@
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 4 of 5
+Unfrozen: Transformer layer 5 of 5
+Trainable parameters: 2,579,873 of 7,840,794 (32.90%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([320]), requires_grad=True
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                | 0/10 [00:00<?, ?it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████████████| 10/10 [00:11<00:00,  1.11s/it]
+{'train_runtime': 11.0637, 'train_samples_per_second': 85.866, 'train_steps_per_second': 0.904, 'train_loss': 2.2840776443481445, 'epoch': 10.0}
+***** train metrics *****
+  epoch                    =       10.0
+  total_flos               =    40859GF
+  train_loss               =     2.2841
+  train_runtime            = 0:00:11.06
+  train_samples_per_second =     85.866
+  train_steps_per_second   =      0.904
+
+After training - Embedding stats: Mean=-0.013621, Std=0.138587
+After training - LM head stats: Mean=-0.013621, Std=0.138587
+
+Training complete! Model saved to: runs/esm_8m_ecoli_finetuning

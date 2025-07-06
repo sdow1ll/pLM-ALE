@@ -1,0 +1,15 @@
+{"time":"2025-05-11T17:58:39.637464068Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmproym0ljq/port-4115246.txt","pid":4115246,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-05-11T17:58:39.640268222Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":4115246}
+{"time":"2025-05-11T17:58:39.640260177Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":43583,"Zone":""}}
+{"time":"2025-05-11T17:58:39.817564227Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:40.015177062Z","level":"INFO","msg":"handleInformInit: received","streamId":"sukv4wgl","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:40.178932551Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"sukv4wgl","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:48.615877754Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"sukv4wgl","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:48.687655146Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"sukv4wgl","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.61551203Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.615563526Z","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.615585507Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-05-11T17:58:49.615631062Z","level":"INFO","msg":"connection: closing","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.615822809Z","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.615848657Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:35690"}
+{"time":"2025-05-11T17:58:49.615884424Z","level":"INFO","msg":"server is closed"}

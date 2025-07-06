@@ -1,0 +1,232 @@
+2025-03-16 20:29:45,663 INFO: Training configuration saved to runs/esm_650m_ecoli_finetuning/train_config.yaml
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 724/724 [00:00<00:00, 166kB/s]
+model.safetensors: 100%|███████████████████████████████████████████████████████████████████████████| 2.61G/2.61G [01:13<00:00, 35.3MB/s]
+tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████| 95.0/95.0 [00:00<00:00, 43.5kB/s]
+vocab.txt: 100%|█████████████████████████████████████████████████████████████████████████████████████| 93.0/93.0 [00:00<00:00, 56.6kB/s]
+special_tokens_map.json: 100%|█████████████████████████████████████████████████████████████████████████| 125/125 [00:00<00:00, 98.3kB/s]
+2025-03-16 20:31:03,015 INFO: Found potential target modules: ['esm.encoder.layer.0.attention.self.key', 'esm.encoder.layer.0.attention.self.value', 'esm.encoder.layer.1.attention.self.key', 'esm.encoder.layer.1.attention.self.value', 'esm.encoder.layer.2.attention.self.key', 'esm.encoder.layer.2.attention.self.value', 'esm.encoder.layer.3.attention.self.key', 'esm.encoder.layer.3.attention.self.value', 'esm.encoder.layer.4.attention.self.key', 'esm.encoder.layer.4.attention.self.value', 'esm.encoder.layer.5.attention.self.key', 'esm.encoder.layer.5.attention.self.value', 'esm.encoder.layer.6.attention.self.key', 'esm.encoder.layer.6.attention.self.value', 'esm.encoder.layer.7.attention.self.key', 'esm.encoder.layer.7.attention.self.value', 'esm.encoder.layer.8.attention.self.key', 'esm.encoder.layer.8.attention.self.value', 'esm.encoder.layer.9.attention.self.key', 'esm.encoder.layer.9.attention.self.value', 'esm.encoder.layer.10.attention.self.key', 'esm.encoder.layer.10.attention.self.value', 'esm.encoder.layer.11.attention.self.key', 'esm.encoder.layer.11.attention.self.value', 'esm.encoder.layer.12.attention.self.key', 'esm.encoder.layer.12.attention.self.value', 'esm.encoder.layer.13.attention.self.key', 'esm.encoder.layer.13.attention.self.value', 'esm.encoder.layer.14.attention.self.key', 'esm.encoder.layer.14.attention.self.value', 'esm.encoder.layer.15.attention.self.key', 'esm.encoder.layer.15.attention.self.value', 'esm.encoder.layer.16.attention.self.key', 'esm.encoder.layer.16.attention.self.value', 'esm.encoder.layer.17.attention.self.key', 'esm.encoder.layer.17.attention.self.value', 'esm.encoder.layer.18.attention.self.key', 'esm.encoder.layer.18.attention.self.value', 'esm.encoder.layer.19.attention.self.key', 'esm.encoder.layer.19.attention.self.value', 'esm.encoder.layer.20.attention.self.key', 'esm.encoder.layer.20.attention.self.value', 'esm.encoder.layer.21.attention.self.key', 'esm.encoder.layer.21.attention.self.value', 'esm.encoder.layer.22.attention.self.key', 'esm.encoder.layer.22.attention.self.value', 'esm.encoder.layer.23.attention.self.key', 'esm.encoder.layer.23.attention.self.value', 'esm.encoder.layer.24.attention.self.key', 'esm.encoder.layer.24.attention.self.value', 'esm.encoder.layer.25.attention.self.key', 'esm.encoder.layer.25.attention.self.value', 'esm.encoder.layer.26.attention.self.key', 'esm.encoder.layer.26.attention.self.value', 'esm.encoder.layer.27.attention.self.key', 'esm.encoder.layer.27.attention.self.value', 'esm.encoder.layer.28.attention.self.key', 'esm.encoder.layer.28.attention.self.value', 'esm.encoder.layer.29.attention.self.key', 'esm.encoder.layer.29.attention.self.value', 'esm.encoder.layer.30.attention.self.key', 'esm.encoder.layer.30.attention.self.value', 'esm.encoder.layer.31.attention.self.key', 'esm.encoder.layer.31.attention.self.value', 'esm.encoder.layer.32.attention.self.key', 'esm.encoder.layer.32.attention.self.value']
+2025-03-16 20:31:03,015 INFO: Using target module names: ['key', 'value']
+2025-03-16 20:31:03,017 INFO: Parameters requiring gradients before LoRA: 652356534
+trainable params: 3,036,193 || all params: 655,392,727 || trainable%: 0.4633
+2025-03-16 20:31:03,098 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,098 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,098 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,098 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,099 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,100 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,101 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,102 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,103 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,104 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,105 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,106 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,107 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,108 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.30.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.30.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.30.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.30.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.31.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,109 INFO: Trainable parameter: base_model.model.esm.encoder.layer.31.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.31.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.31.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.32.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.32.attention.self.key.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.32.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.esm.encoder.layer.32.attention.self.value.lora_B.default.weight (shape: torch.Size([1280, 8]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.lm_head.original_module.bias (shape: torch.Size([33]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.lm_head.original_module.dense.weight (shape: torch.Size([1280, 1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.lm_head.original_module.dense.bias (shape: torch.Size([1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.lm_head.original_module.layer_norm.weight (shape: torch.Size([1280]))
+2025-03-16 20:31:03,110 INFO: Trainable parameter: base_model.model.lm_head.original_module.layer_norm.bias (shape: torch.Size([1280]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.bias (shape: torch.Size([33]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.dense.weight (shape: torch.Size([1280, 1280]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.dense.bias (shape: torch.Size([1280]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.layer_norm.weight (shape: torch.Size([1280]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.layer_norm.bias (shape: torch.Size([1280]))
+2025-03-16 20:31:03,111 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.decoder.weight (shape: torch.Size([33, 1280]))
+2025-03-16 20:31:03,115 INFO: LoRA integration complete. Trainable parameters: 4678466 (0.71% of total)
+2025-03-16 20:31:03,185 INFO: Loaded 12000 training and 1500 evaluation sequences.
+2025-03-16 20:31:03,185 INFO: Adjusted max_length to 1024 to be a multiple of 8
+2025-03-16 20:31:03,186 INFO: Using masked language modeling (MLM) data collator for ESM model.
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+  0%|                                                                                                          | 0/4700 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 582, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 561, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/peft/peft_model.py", line 1719, in forward
+    return self.base_model(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 1001, in forward
+    outputs = self.esm(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 907, in forward
+    encoder_outputs = self.encoder(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 612, in forward
+    layer_outputs = layer_module(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 502, in forward
+    self_attention_outputs = self.attention(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 436, in forward
+    self_outputs = self.self(
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/py39/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 360, in forward
+    attention_scores = attention_scores + attention_mask
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.25 GiB. GPU 0 has a total capacity of 31.73 GiB of which 1.17 GiB is free. Process 76223 has 30.55 GiB memory in use. Of the allocated memory 29.45 GiB is allocated by PyTorch, and 414.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

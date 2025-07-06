@@ -1,0 +1,47 @@
+2025-04-14 17:15:20,167 INFO: Training configuration saved to runs/progen2_151m_ecoli_finetuning_1/train_config.yaml
+2025-04-14 17:15:24,345 INFO: LoRA integration complete for the ProGen model. Trainable: 393216 (0.26% of total)
+2025-04-14 17:15:24,472 INFO: Loaded 7489 training and 1404 evaluation sequences.
+2025-04-14 17:15:24,472 INFO: Using causal language modeling (CLM) data collator for ProGen model.
+2025-04-14 17:15:24,473 INFO: Number of trainable parameters before training: 393216
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+2025-04-14 17:15:26,490 INFO: Resuming training from checkpoint: runs/progen2_151m_ecoli_finetuning_1/checkpoint-11500
+Warning: The following arguments do not match the ones in the `trainer_state.json` within the checkpoint directory:
+	per_device_train_batch_size: 8 (from args) != 2 (from trainer_state.json)
+  0%|                                                                                   | 0/23400 [00:00<?, ?it/s]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 51%|██████████████████████████████████▉                                  | 11859/23400 [05:29<2:51:26,  1.12it/s]Traceback (most recent call last):
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 613, in <module>
+    main()
+    ~~~~^^
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 586, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+        args=args,
+    ...<2 lines>...
+        ignore_keys_for_eval=ignore_keys_for_eval,
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+        replicas, inputs, kwargs, self.device_ids[: len(replicas)]
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/parallel_apply.py", line 118, in parallel_apply
+    thread.join()
+    ~~~~~~~~~~~^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/threading.py", line 1092, in join
+    self._handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,56 @@
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 4 of 5
+Unfrozen: Transformer layer 5 of 5
+Trainable parameters: 2,579,873 of 7,840,794 (32.90%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([320]), requires_grad=True
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 617, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 526, in main
+    trainer = ClearEvalMemoryTrainer(
+NameError: name 'ClearEvalMemoryTrainer' is not defined
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 617, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 526, in main
+    trainer = ClearEvalMemoryTrainer(
+NameError: name 'ClearEvalMemoryTrainer' is not defined

@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.5.5-200.fc38.x86_64-x86_64-with-glibc2.31",
+  "python": "CPython 3.9.18",
+  "startedAt": "2025-03-17T00:13:56.860903Z",
+  "args": [
+    "--config",
+    "optimized-config.yml"
+  ],
+  "program": "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py",
+  "codePath": "finetuneESM2_ProGen2_LoRA.py",
+  "email": "sdowell@anl.gov",
+  "root": "runs/esm_650m_ecoli_finetuning",
+  "host": "2a2cf662-fc61-11ef-9a20-0a580a810034-cdc84754-vklwp",
+  "executable": "/home/idies/miniconda3/bin/python",
+  "codePathLocal": "finetuneESM2_ProGen2_LoRA.py",
+  "cpu_count": 36,
+  "cpu_count_logical": 72,
+  "gpu": "Tesla P100-PCIE-16GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1998884499456",
+      "used": "118517669888"
+    }
+  },
+  "memory": {
+    "total": "270157344768"
+  },
+  "cpu": {
+    "count": 36,
+    "countLogical": 72
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla P100-PCIE-16GB",
+      "memoryTotal": "17179869184",
+      "cudaCores": 3584,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

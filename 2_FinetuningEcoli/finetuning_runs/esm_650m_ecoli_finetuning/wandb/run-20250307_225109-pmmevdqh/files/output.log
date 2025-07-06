@@ -1,0 +1,115 @@
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 724/724 [00:00<00:00, 234kB/s]
+model.safetensors: 100%|███████████████████████████████████████████████████████████████████████████| 2.61G/2.61G [01:12<00:00, 36.1MB/s]
+tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████| 95.0/95.0 [00:00<00:00, 57.6kB/s]
+vocab.txt: 100%|██████████████████████████████████████████████████████████████████████████████████████| 93.0/93.0 [00:00<00:00, 139kB/s]
+special_tokens_map.json: 100%|██████████████████████████████████████████████████████████████████████████| 125/125 [00:00<00:00, 200kB/s]
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 31 of 32
+Unfrozen: Transformer layer 32 of 32
+Trainable parameters: 41,039,393 of 652,356,534 (6.29%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.query.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.query.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.key.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.key.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.value.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.31.attention.self.value.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.attention.output.dense.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.31.attention.output.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.attention.LayerNorm.weight: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.attention.LayerNorm.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.intermediate.dense.weight: shape=torch.Size([5120, 1280]), requires_grad=True
+esm.encoder.layer.31.intermediate.dense.bias: shape=torch.Size([5120]), requires_grad=True
+esm.encoder.layer.31.output.dense.weight: shape=torch.Size([1280, 5120]), requires_grad=True
+esm.encoder.layer.31.output.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.LayerNorm.weight: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.31.LayerNorm.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.query.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.query.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.key.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.key.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.value.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.32.attention.self.value.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.output.dense.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+esm.encoder.layer.32.attention.output.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.LayerNorm.weight: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.attention.LayerNorm.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.intermediate.dense.weight: shape=torch.Size([5120, 1280]), requires_grad=True
+esm.encoder.layer.32.intermediate.dense.bias: shape=torch.Size([5120]), requires_grad=True
+esm.encoder.layer.32.output.dense.weight: shape=torch.Size([1280, 5120]), requires_grad=True
+esm.encoder.layer.32.output.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.LayerNorm.weight: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.32.LayerNorm.bias: shape=torch.Size([1280]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([1280, 1280]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([1280]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([1280]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([1280]), requires_grad=True
+  0%|                                                                                                          | 0/4700 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze-test.py", line 517, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze-test.py", line 481, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 1001, in forward
+    outputs = self.esm(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 907, in forward
+    encoder_outputs = self.encoder(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 612, in forward
+    layer_outputs = layer_module(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 502, in forward
+    self_attention_outputs = self.attention(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 436, in forward
+    self_outputs = self.self(
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 340, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.08 GiB. GPU 0 has a total capacity of 31.73 GiB of which 978.44 MiB is free. Process 3273727 has 30.77 GiB memory in use. Of the allocated memory 28.57 GiB is allocated by PyTorch, and 1.55 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
