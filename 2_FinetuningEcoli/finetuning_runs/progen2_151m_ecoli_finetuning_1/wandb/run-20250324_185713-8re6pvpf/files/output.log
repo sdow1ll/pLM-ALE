@@ -1,0 +1,13 @@
+2025-03-24 18:57:14,867 INFO: Training configuration saved to runs/progen2_151m_ecoli_finetuning_1/train_config.yaml
+2025-03-24 18:57:18,562 INFO: LoRA integration complete for the ProGen model.
+Traceback (most recent call last):
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 588, in <module>
+    main()
+    ~~~~^^
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 506, in main
+    tokenizer.model_max_length = model.config.max_position_embeddings
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/configuration_utils.py", line 214, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+AttributeError: 'ProGenConfig' object has no attribute 'max_position_embeddings'

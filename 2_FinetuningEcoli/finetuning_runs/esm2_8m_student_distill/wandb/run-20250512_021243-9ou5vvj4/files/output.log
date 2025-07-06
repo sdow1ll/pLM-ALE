@@ -1,0 +1,143 @@
+2025-05-12 02:12:43,506 INFO: Training configuration saved to runs/esm2_8m_student_distill/train_config.yaml
+2025-05-12 02:12:43,809 INFO: Found potential target modules: ['esm.encoder.layer.0.attention.self.key', 'esm.encoder.layer.0.attention.self.value', 'esm.encoder.layer.1.attention.self.key', 'esm.encoder.layer.1.attention.self.value', 'esm.encoder.layer.2.attention.self.key', 'esm.encoder.layer.2.attention.self.value', 'esm.encoder.layer.3.attention.self.key', 'esm.encoder.layer.3.attention.self.value', 'esm.encoder.layer.4.attention.self.key', 'esm.encoder.layer.4.attention.self.value', 'esm.encoder.layer.5.attention.self.key', 'esm.encoder.layer.5.attention.self.value']
+2025-05-12 02:12:43,809 INFO: Using target module names: ['value', 'key']
+2025-05-12 02:12:43,809 INFO: Parameters requiring gradients before LoRA: 7840794
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,820 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,821 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.lm_head.bias (shape: torch.Size([33]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.lm_head.dense.weight (shape: torch.Size([320, 320]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.lm_head.dense.bias (shape: torch.Size([320]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.lm_head.layer_norm.weight (shape: torch.Size([320]))
+2025-05-12 02:12:43,822 INFO: Trainable parameter: base_model.model.lm_head.layer_norm.bias (shape: torch.Size([320]))
+2025-05-12 02:12:43,823 INFO: LoRA integration complete. Trainable parameters: 164833 (2.09% of total)
+2025-05-12 02:12:43,857 INFO: Loaded 7489 training and 1404 evaluation sequences.
+2025-05-12 02:12:43,857 INFO: Adjusted max_length to 1024 to be a multiple of 8
+2025-05-12 02:12:43,857 INFO: Using masked language modeling (MLM) data collator for ESM model.
+2025-05-12 02:12:43,858 INFO: Number of trainable parameters before training: 164833
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                          | 0/60 [00:00<?, ?it/s]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  5%|████▉                                                                                             | 3/60 [00:31<08:22,  8.82s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4848, 'grad_norm': 21587.583984375, 'learning_rate': 1.2000000000000002e-06, 'epoch': 0.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4365103244781494, 'eval_runtime': 2.7478, 'eval_samples_per_second': 510.95, 'eval_steps_per_second': 4.003, 'epoch': 0.81}
+ 10%|█████████▊                                                                                        | 6/60 [00:59<07:59,  8.88s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4886, 'grad_norm': 22615.02734375, 'learning_rate': 2.4000000000000003e-06, 'epoch': 1.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4389421939849854, 'eval_runtime': 2.6522, 'eval_samples_per_second': 529.368, 'eval_steps_per_second': 4.147, 'epoch': 1.81}
+ 15%|██████████████▋                                                                                   | 9/60 [01:27<07:34,  8.92s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4901, 'grad_norm': 22276.798828125, 'learning_rate': 3.6e-06, 'epoch': 2.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.438480854034424, 'eval_runtime': 2.65, 'eval_samples_per_second': 529.808, 'eval_steps_per_second': 4.151, 'epoch': 2.81}
+ 20%|███████████████████▍                                                                             | 12/60 [01:55<07:07,  8.91s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4877, 'grad_norm': 20422.28125, 'learning_rate': 4.800000000000001e-06, 'epoch': 3.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.430912733078003, 'eval_runtime': 2.6735, 'eval_samples_per_second': 525.151, 'eval_steps_per_second': 4.114, 'epoch': 3.81}
+ 25%|████████████████████████▎                                                                        | 15/60 [02:23<06:39,  8.88s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4888, 'grad_norm': 22002.392578125, 'learning_rate': 6e-06, 'epoch': 4.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.432502508163452, 'eval_runtime': 2.6566, 'eval_samples_per_second': 528.501, 'eval_steps_per_second': 4.141, 'epoch': 4.81}
+ 30%|█████████████████████████████                                                                    | 18/60 [02:51<06:12,  8.87s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4886, 'grad_norm': 20314.107421875, 'learning_rate': 7.2e-06, 'epoch': 5.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4385130405426025, 'eval_runtime': 2.6834, 'eval_samples_per_second': 523.225, 'eval_steps_per_second': 4.099, 'epoch': 5.81}
+ 35%|█████████████████████████████████▉                                                               | 21/60 [03:19<05:46,  8.88s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4861, 'grad_norm': 20446.234375, 'learning_rate': 8.400000000000001e-06, 'epoch': 6.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4360709190368652, 'eval_runtime': 2.637, 'eval_samples_per_second': 532.428, 'eval_steps_per_second': 4.171, 'epoch': 6.81}
+ 40%|██████████████████████████████████████▊                                                          | 24/60 [03:48<05:20,  8.91s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4829, 'grad_norm': 19999.87890625, 'learning_rate': 9.600000000000001e-06, 'epoch': 7.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4336905479431152, 'eval_runtime': 2.6675, 'eval_samples_per_second': 526.343, 'eval_steps_per_second': 4.124, 'epoch': 7.81}
+ 45%|███████████████████████████████████████████▋                                                     | 27/60 [04:16<04:53,  8.90s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4838, 'grad_norm': 21404.787109375, 'learning_rate': 1.08e-05, 'epoch': 8.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4291865825653076, 'eval_runtime': 2.7078, 'eval_samples_per_second': 518.497, 'eval_steps_per_second': 4.062, 'epoch': 8.81}
+ 50%|████████████████████████████████████████████████▌                                                | 30/60 [04:44<04:27,  8.93s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4813, 'grad_norm': 21291.3984375, 'learning_rate': 1.2e-05, 'epoch': 9.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.426076889038086, 'eval_runtime': 2.6712, 'eval_samples_per_second': 525.614, 'eval_steps_per_second': 4.118, 'epoch': 9.81}
+ 55%|█████████████████████████████████████████████████████▎                                           | 33/60 [05:12<04:01,  8.93s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4824, 'grad_norm': 21328.12890625, 'learning_rate': 1.32e-05, 'epoch': 10.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.432742118835449, 'eval_runtime': 2.686, 'eval_samples_per_second': 522.712, 'eval_steps_per_second': 4.095, 'epoch': 10.81}
+ 60%|██████████████████████████████████████████████████████████▏                                      | 36/60 [05:40<03:34,  8.92s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4766, 'grad_norm': 20028.7265625, 'learning_rate': 1.44e-05, 'epoch': 11.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4239137172698975, 'eval_runtime': 2.6696, 'eval_samples_per_second': 525.931, 'eval_steps_per_second': 4.121, 'epoch': 11.81}
+ 65%|███████████████████████████████████████████████████████████████                                  | 39/60 [06:09<03:07,  8.92s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4766, 'grad_norm': 20351.884765625, 'learning_rate': 1.56e-05, 'epoch': 12.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4276769161224365, 'eval_runtime': 2.6804, 'eval_samples_per_second': 523.805, 'eval_steps_per_second': 4.104, 'epoch': 12.81}
+ 70%|███████████████████████████████████████████████████████████████████▉                             | 42/60 [06:37<02:40,  8.92s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4733, 'grad_norm': 19386.2734375, 'learning_rate': 1.6800000000000002e-05, 'epoch': 13.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4212276935577393, 'eval_runtime': 2.6746, 'eval_samples_per_second': 524.944, 'eval_steps_per_second': 4.113, 'epoch': 13.81}
+ 75%|████████████████████████████████████████████████████████████████████████▊                        | 45/60 [07:05<02:13,  8.90s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4716, 'grad_norm': 20221.8046875, 'learning_rate': 1.8e-05, 'epoch': 14.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.419484853744507, 'eval_runtime': 2.6565, 'eval_samples_per_second': 528.508, 'eval_steps_per_second': 4.141, 'epoch': 14.81}
+ 80%|█████████████████████████████████████████████████████████████████████████████▌                   | 48/60 [07:33<01:46,  8.88s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.468, 'grad_norm': 20673.9375, 'learning_rate': 1.9200000000000003e-05, 'epoch': 15.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4156010150909424, 'eval_runtime': 2.7081, 'eval_samples_per_second': 518.437, 'eval_steps_per_second': 4.062, 'epoch': 15.81}
+ 85%|██████████████████████████████████████████████████████████████████████████████████▍              | 51/60 [08:01<01:20,  8.90s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4638, 'grad_norm': 19290.578125, 'learning_rate': 2.04e-05, 'epoch': 16.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4126923084259033, 'eval_runtime': 2.7095, 'eval_samples_per_second': 518.185, 'eval_steps_per_second': 4.06, 'epoch': 16.81}
+ 90%|███████████████████████████████████████████████████████████████████████████████████████▎         | 54/60 [08:29<00:53,  8.91s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4613, 'grad_norm': 18819.845703125, 'learning_rate': 2.16e-05, 'epoch': 17.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.4123313426971436, 'eval_runtime': 2.68, 'eval_samples_per_second': 523.885, 'eval_steps_per_second': 4.105, 'epoch': 17.81}
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████▏    | 57/60 [08:57<00:26,  8.91s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4603, 'grad_norm': 19457.21484375, 'learning_rate': 2.2800000000000002e-05, 'epoch': 18.81}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 2.41188645362854, 'eval_runtime': 2.6716, 'eval_samples_per_second': 525.525, 'eval_steps_per_second': 4.117, 'epoch': 18.81}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [09:22<00:00,  8.88s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.4048, 'grad_norm': 18226.896484375, 'learning_rate': 2.4e-05, 'epoch': 19.81}
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [09:28<00:00,  9.48s/it]
+[34m[1mwandb[0m: Adding directory to artifact (./runs/esm2_8m_student_distill)... Done. 0.1s                                       
+{'eval_loss': 2.3992950916290283, 'eval_runtime': 2.6786, 'eval_samples_per_second': 524.153, 'eval_steps_per_second': 4.107, 'epoch': 19.81}
+{'train_runtime': 568.7998, 'train_samples_per_second': 263.326, 'train_steps_per_second': 0.105, 'train_loss': 2.47506951491038, 'epoch': 19.81}
+***** train metrics *****
+  epoch                    =    19.8136
+  total_flos               =  5423235GF
+  train_loss               =     2.4751
+  train_runtime            = 0:09:28.79
+  train_samples_per_second =    263.326
+  train_steps_per_second   =      0.105
+2025-05-12 02:22:13,512 INFO: Training complete.
+/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:01<00:00,  5.72it/s]
+***** eval metrics *****
+  epoch                   =    19.8136
+  eval_loss               =     2.4024
+  eval_runtime            = 0:00:02.60
+  eval_samples_per_second =    537.951
+  eval_steps_per_second   =      4.215
+Evaluation metrics: {'eval_loss': 2.402376890182495, 'eval_runtime': 2.6099, 'eval_samples_per_second': 537.951, 'eval_steps_per_second': 4.215, 'epoch': 19.8135593220339}

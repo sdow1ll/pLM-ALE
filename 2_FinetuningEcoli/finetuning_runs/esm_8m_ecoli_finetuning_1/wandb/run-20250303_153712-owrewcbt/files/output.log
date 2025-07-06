@@ -1,0 +1,129 @@
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 4 of 5
+Unfrozen: Transformer layer 5 of 5
+Trainable parameters: 2,579,873 of 7,840,794 (32.90%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([320]), requires_grad=True
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                             | 0/10000 [00:00<?, ?it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  5%|███▎                                                             | 500/10000 [07:17<2:17:34,  1.15it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 2.139, 'grad_norm': 33299.94140625, 'learning_rate': 5e-05, 'epoch': 500.0}
+Step 500: Training loss = 2.1390
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 2.369720458984375, 'eval_runtime': 0.2164, 'eval_samples_per_second': 92.411, 'eval_steps_per_second': 4.621, 'epoch': 500.0}
+ 10%|██████▍                                                         | 1000/10000 [14:36<2:11:54,  1.14it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 1.6202, 'grad_norm': 48337.6796875, 'learning_rate': 0.0001, 'epoch': 1000.0}
+Step 1000: Training loss = 1.6202
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 2.963996410369873, 'eval_runtime': 0.2211, 'eval_samples_per_second': 90.449, 'eval_steps_per_second': 4.522, 'epoch': 1000.0}
+ 15%|█████████▌                                                      | 1500/10000 [21:54<2:03:27,  1.15it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 1.0821, 'grad_norm': 63475.18359375, 'learning_rate': 9.924038765061042e-05, 'epoch': 1500.0}
+Step 1500: Training loss = 1.0821
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 3.3224825859069824, 'eval_runtime': 0.2173, 'eval_samples_per_second': 92.04, 'eval_steps_per_second': 4.602, 'epoch': 1500.0}
+ 20%|████████████▊                                                   | 2000/10000 [29:13<1:56:32,  1.14it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.7144, 'grad_norm': 67667.6953125, 'learning_rate': 9.698463103929542e-05, 'epoch': 2000.0}
+Step 2000: Training loss = 0.7144
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 3.7356529235839844, 'eval_runtime': 0.2195, 'eval_samples_per_second': 91.113, 'eval_steps_per_second': 4.556, 'epoch': 2000.0}
+ 25%|████████████████                                                | 2500/10000 [36:33<1:49:15,  1.14it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.4713, 'grad_norm': 71208.3671875, 'learning_rate': 9.330127018922194e-05, 'epoch': 2500.0}
+Step 2500: Training loss = 0.4713
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 4.115699291229248, 'eval_runtime': 0.2198, 'eval_samples_per_second': 91.005, 'eval_steps_per_second': 4.55, 'epoch': 2500.0}
+ 30%|███████████████████▏                                            | 3000/10000 [43:51<1:41:54,  1.14it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.3222, 'grad_norm': 64519.7421875, 'learning_rate': 8.83022221559489e-05, 'epoch': 3000.0}
+Step 3000: Training loss = 0.3222
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 4.417626857757568, 'eval_runtime': 0.2205, 'eval_samples_per_second': 90.691, 'eval_steps_per_second': 4.535, 'epoch': 3000.0}
+ 35%|██████████████████████▍                                         | 3500/10000 [51:10<1:35:09,  1.14it/s]/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.2345, 'grad_norm': 60661.17578125, 'learning_rate': 8.213938048432697e-05, 'epoch': 3500.0}
+Step 3500: Training loss = 0.2345
+WARNING: Loss not decreasing significantly. Check if model is learning properly.
+  warnings.warn(                                                                                            
+{'eval_loss': 4.477331161499023, 'eval_runtime': 0.2203, 'eval_samples_per_second': 90.767, 'eval_steps_per_second': 4.538, 'epoch': 3500.0}
+ 36%|███████████████████████▎                                        | 3638/10000 [53:12<1:32:27,  1.15it/s]Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 517, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 481, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3740, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/accelerate/accelerator.py", line 2325, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 517, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 481, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3740, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/accelerate/accelerator.py", line 2325, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

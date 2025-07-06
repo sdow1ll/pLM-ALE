@@ -1,0 +1,15 @@
+{"time":"2025-03-17T01:06:39.989167006Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/esm_650m_ecoli_finetuning/wandb/run-20250317_010639-kybon3bs/logs/debug-core.log"}
+{"time":"2025-03-17T01:06:40.109512312Z","level":"INFO","msg":"created new stream","id":"kybon3bs"}
+{"time":"2025-03-17T01:06:40.109563928Z","level":"INFO","msg":"stream: started","id":"kybon3bs"}
+{"time":"2025-03-17T01:06:40.109594285Z","level":"INFO","msg":"writer: Do: started","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:40.109611657Z","level":"INFO","msg":"handler: started","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:40.109671389Z","level":"INFO","msg":"sender: started","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:40.292617788Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T01:06:51.423306895Z","level":"INFO","msg":"stream: closing","id":"kybon3bs"}
+{"time":"2025-03-17T01:06:51.423442778Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T01:06:51.424623649Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T01:06:51.730386229Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T01:06:51.823910005Z","level":"INFO","msg":"handler: closed","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:51.82398755Z","level":"INFO","msg":"writer: Close: closed","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:51.824025962Z","level":"INFO","msg":"sender: closed","stream_id":"kybon3bs"}
+{"time":"2025-03-17T01:06:51.831460328Z","level":"INFO","msg":"stream: closed","id":"kybon3bs"}

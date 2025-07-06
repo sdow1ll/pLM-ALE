@@ -1,0 +1,193 @@
+Unfrozen: Language modeling head (lm_head)
+Unfrozen: Transformer layer 4 of 5
+Unfrozen: Transformer layer 5 of 5
+Trainable parameters: 2,579,873 of 7,840,794 (32.90%)
+
+Detailed trainable parameters:
+esm.embeddings.word_embeddings.weight: shape=torch.Size([33, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.4.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.4.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.4.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.4.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.query.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.key.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.self.value.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+esm.encoder.layer.5.attention.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.attention.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.weight: shape=torch.Size([1280, 320]), requires_grad=True
+esm.encoder.layer.5.intermediate.dense.bias: shape=torch.Size([1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.weight: shape=torch.Size([320, 1280]), requires_grad=True
+esm.encoder.layer.5.output.dense.bias: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.weight: shape=torch.Size([320]), requires_grad=True
+esm.encoder.layer.5.LayerNorm.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.bias: shape=torch.Size([33]), requires_grad=True
+lm_head.dense.weight: shape=torch.Size([320, 320]), requires_grad=True
+lm_head.dense.bias: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.weight: shape=torch.Size([320]), requires_grad=True
+lm_head.layer_norm.bias: shape=torch.Size([320]), requires_grad=True
+  0%|                                                                                                                                                    | 0/100 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 642, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 606, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 1001, in forward
+    outputs = self.esm(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 907, in forward
+    encoder_outputs = self.encoder(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 612, in forward
+    layer_outputs = layer_module(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 502, in forward
+    self_attention_outputs = self.attention(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 436, in forward
+    self_outputs = self.self(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 367, in forward
+    attention_probs = self.dropout(attention_probs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.88 GiB. GPU 0 has a total capacity of 31.73 GiB of which 1.47 GiB is free. Process 2398498 has 30.25 GiB memory in use. Of the allocated memory 28.47 GiB is allocated by PyTorch, and 1.13 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 642, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetune-freeze.py", line 606, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/trainer.py", line 3759, in compute_loss
+    outputs = model(**inputs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 1001, in forward
+    outputs = self.esm(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 907, in forward
+    encoder_outputs = self.encoder(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 612, in forward
+    layer_outputs = layer_module(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 502, in forward
+    self_attention_outputs = self.attention(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 436, in forward
+    self_outputs = self.self(
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/transformers/models/esm/modeling_esm.py", line 367, in forward
+    attention_probs = self.dropout(attention_probs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/home/idies/miniconda3/envs/finetuning/lib/python3.9/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.88 GiB. GPU 0 has a total capacity of 31.73 GiB of which 1.47 GiB is free. Process 2398498 has 30.25 GiB memory in use. Of the allocated memory 28.47 GiB is allocated by PyTorch, and 1.13 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

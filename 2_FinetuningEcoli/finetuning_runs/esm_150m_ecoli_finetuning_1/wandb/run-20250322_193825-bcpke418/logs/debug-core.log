@@ -1,0 +1,7 @@
+{"time":"2025-03-22T19:38:25.205261129Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp_sifyqro/port-268415.txt","pid":268415,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-03-22T19:38:25.206523974Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":268415}
+{"time":"2025-03-22T19:38:25.206524565Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":40583,"Zone":""}}
+{"time":"2025-03-22T19:38:25.38556372Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:41608"}
+{"time":"2025-03-22T19:38:25.480755926Z","level":"INFO","msg":"handleInformInit: received","streamId":"bcpke418","id":"127.0.0.1:41608"}
+{"time":"2025-03-22T19:38:26.609618685Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"bcpke418","id":"127.0.0.1:41608"}
+{"time":"2025-03-22T19:41:08.00565344Z","level":"INFO","msg":"Parent process exited, terminating service process."}

@@ -1,0 +1,15 @@
+{"time":"2025-05-11T20:18:55.301468732Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/esm2_8m_student_distill_2/wandb/run-20250511_201855-lekn860j/logs/debug-core.log"}
+{"time":"2025-05-11T20:18:55.423725252Z","level":"INFO","msg":"created new stream","id":"lekn860j"}
+{"time":"2025-05-11T20:18:55.423793189Z","level":"INFO","msg":"stream: started","id":"lekn860j"}
+{"time":"2025-05-11T20:18:55.423882926Z","level":"INFO","msg":"writer: Do: started","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:18:55.423919354Z","level":"INFO","msg":"handler: started","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:18:55.423980347Z","level":"INFO","msg":"sender: started","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:18:55.657907524Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-11T20:19:01.0094068Z","level":"INFO","msg":"stream: closing","id":"lekn860j"}
+{"time":"2025-05-11T20:19:01.009482872Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-11T20:19:01.010921741Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-11T20:19:01.381139083Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-11T20:19:01.473763932Z","level":"INFO","msg":"handler: closed","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:19:01.473813104Z","level":"INFO","msg":"writer: Close: closed","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:19:01.473843851Z","level":"INFO","msg":"sender: closed","stream_id":"lekn860j"}
+{"time":"2025-05-11T20:19:01.474886282Z","level":"INFO","msg":"stream: closed","id":"lekn860j"}

@@ -1,0 +1,219 @@
+2025-03-17 00:13:57,333 INFO: Training configuration saved to runs/esm_650m_ecoli_finetuning/train_config.yaml
+2025-03-17 00:13:58,125 INFO: Found target module: esm.encoder.layer.0.attention.self.key
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.0.attention.self.value
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.1.attention.self.key
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.1.attention.self.value
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.2.attention.self.key
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.2.attention.self.value
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.3.attention.self.key
+2025-03-17 00:13:58,126 INFO: Found target module: esm.encoder.layer.3.attention.self.value
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.4.attention.self.key
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.4.attention.self.value
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.5.attention.self.key
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.5.attention.self.value
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.6.attention.self.key
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.6.attention.self.value
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.7.attention.self.key
+2025-03-17 00:13:58,127 INFO: Found target module: esm.encoder.layer.7.attention.self.value
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.8.attention.self.key
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.8.attention.self.value
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.9.attention.self.key
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.9.attention.self.value
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.10.attention.self.key
+2025-03-17 00:13:58,128 INFO: Found target module: esm.encoder.layer.10.attention.self.value
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.11.attention.self.key
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.11.attention.self.value
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.12.attention.self.key
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.12.attention.self.value
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.13.attention.self.key
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.13.attention.self.value
+2025-03-17 00:13:58,129 INFO: Found target module: esm.encoder.layer.14.attention.self.key
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.14.attention.self.value
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.15.attention.self.key
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.15.attention.self.value
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.16.attention.self.key
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.16.attention.self.value
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.17.attention.self.key
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.17.attention.self.value
+2025-03-17 00:13:58,130 INFO: Found target module: esm.encoder.layer.18.attention.self.key
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.18.attention.self.value
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.19.attention.self.key
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.19.attention.self.value
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.20.attention.self.key
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.20.attention.self.value
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.21.attention.self.key
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.21.attention.self.value
+2025-03-17 00:13:58,131 INFO: Found target module: esm.encoder.layer.22.attention.self.key
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.22.attention.self.value
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.23.attention.self.key
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.23.attention.self.value
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.24.attention.self.key
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.24.attention.self.value
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.25.attention.self.key
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.25.attention.self.value
+2025-03-17 00:13:58,132 INFO: Found target module: esm.encoder.layer.26.attention.self.key
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.26.attention.self.value
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.27.attention.self.key
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.27.attention.self.value
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.28.attention.self.key
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.28.attention.self.value
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.29.attention.self.key
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.29.attention.self.value
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.30.attention.self.key
+2025-03-17 00:13:58,133 INFO: Found target module: esm.encoder.layer.30.attention.self.value
+2025-03-17 00:13:58,134 INFO: Found target module: esm.encoder.layer.31.attention.self.key
+2025-03-17 00:13:58,134 INFO: Found target module: esm.encoder.layer.31.attention.self.value
+2025-03-17 00:13:58,134 INFO: Found target module: esm.encoder.layer.32.attention.self.key
+2025-03-17 00:13:58,134 INFO: Found target module: esm.encoder.layer.32.attention.self.value
+Before LoRA - Number of trainable parameters: 652356534
+2025-03-17 00:13:58,242 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.0.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,242 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.0.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,242 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.0.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,242 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.0.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.1.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.1.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.1.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.1.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.2.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,243 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.2.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.2.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.2.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.3.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.3.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.3.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.3.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,244 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.4.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.4.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.4.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.4.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.5.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.5.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.5.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,245 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.5.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.6.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.6.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.6.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.6.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.7.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.7.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,246 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.7.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.7.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.8.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.8.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.8.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.8.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.9.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,247 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.9.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.9.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.9.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.10.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.10.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.10.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.10.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,248 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.11.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.11.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.11.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.11.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.12.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.12.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.12.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.12.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,249 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.13.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.13.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.13.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.13.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.14.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.14.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.14.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,250 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.14.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.15.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.15.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.15.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.15.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.16.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.16.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,251 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.16.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.16.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.17.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.17.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.17.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.17.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,252 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.18.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.18.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.18.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.18.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.19.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.19.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,253 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.19.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.19.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.20.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.20.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.20.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.20.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,254 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.21.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.21.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.21.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.21.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.22.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.22.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.22.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,255 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.22.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.23.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.23.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.23.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.23.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.24.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.24.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,256 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.24.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.24.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.25.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.25.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.25.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.25.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.26.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,257 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.26.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.26.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.26.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.27.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.27.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.27.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.27.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.28.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,258 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.28.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.28.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.28.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.29.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.29.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.29.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.29.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,259 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.30.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.30.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.30.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.30.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.31.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.31.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.31.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,260 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.31.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.32.attention.self.key.lora_A.default.weight
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.32.attention.self.key.lora_B.default.weight
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.32.attention.self.value.lora_A.default.weight
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.esm.encoder.layer.32.attention.self.value.lora_B.default.weight
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.lm_head.original_module.bias
+2025-03-17 00:13:58,261 INFO: Parameter will be trained: base_model.model.lm_head.original_module.dense.weight
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.original_module.dense.bias
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.original_module.layer_norm.weight
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.original_module.layer_norm.bias
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.bias
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.dense.weight
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.dense.bias
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.layer_norm.weight
+2025-03-17 00:13:58,262 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.layer_norm.bias
+2025-03-17 00:13:58,263 INFO: Parameter will be trained: base_model.model.lm_head.modules_to_save.default.decoder.weight
+2025-03-17 00:13:58,268 INFO: LoRA integration complete for the ESM model.
+2025-03-17 00:13:58,268 INFO: Trainable parameters: 3036193 (0.46% of total)
+Traceback (most recent call last):
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 516, in <module>
+    main()
+  File "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 444, in main
+    train_dataset = SequenceDataset(train_sequences)
+NameError: name 'train_sequences' is not defined

@@ -1,0 +1,51 @@
+2025-04-14 17:42:03,040 INFO: Training configuration saved to runs/progen2_dgoa_finetune_1/train_config.yaml
+2025-04-14 17:42:03,776 INFO: LoRA integration complete for the ProGen model. Trainable: 393216 (0.26% of total)
+2025-04-14 17:42:03,911 INFO: Loaded 15616 training and 1952 evaluation sequences.
+2025-04-14 17:42:03,911 INFO: Using causal language modeling (CLM) data collator for ProGen model.
+2025-04-14 17:42:03,913 INFO: Number of trainable parameters before training: 393216
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+  0%|                                                                                                      | 0/3000 [00:00<?, ?it/s]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 17%|█████████████▋                                                                    | 500/3000 [1:34:34<6:12:45,  8.95s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.4986, 'grad_norm': 36720.8828125, 'learning_rate': 0.0002, 'epoch': 16.13}
+  warnings.warn(                                                                                                              
+{'eval_loss': 0.11689727008342743, 'eval_runtime': 17.6151, 'eval_samples_per_second': 110.814, 'eval_steps_per_second': 1.76, 'epoch': 16.13}
+ 33%|███████████████████████████                                                      | 1000/3000 [2:50:31<5:05:06,  9.15s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.0995, 'grad_norm': 52318.76171875, 'learning_rate': 0.0004, 'epoch': 32.26}
+  warnings.warn(                                                                                                              
+{'eval_loss': 0.08997955173254013, 'eval_runtime': 17.6533, 'eval_samples_per_second': 110.574, 'eval_steps_per_second': 1.756, 'epoch': 32.26}
+ 50%|████████████████████████████████████████▌                                        | 1500/3000 [4:06:31<3:50:23,  9.22s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.08, 'grad_norm': 28885.361328125, 'learning_rate': 0.0003414213562373095, 'epoch': 48.39}
+  warnings.warn(                                                                                                              
+{'eval_loss': 0.07608197629451752, 'eval_runtime': 17.5357, 'eval_samples_per_second': 111.316, 'eval_steps_per_second': 1.768, 'epoch': 48.39}
+ 67%|██████████████████████████████████████████████████████                           | 2000/3000 [5:26:40<2:45:46,  9.95s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.0693, 'grad_norm': 24726.30078125, 'learning_rate': 0.0002, 'epoch': 64.52}
+  warnings.warn(                                                                                                              
+{'eval_loss': 0.06895527243614197, 'eval_runtime': 20.1069, 'eval_samples_per_second': 97.081, 'eval_steps_per_second': 1.542, 'epoch': 64.52}
+ 83%|███████████████████████████████████████████████████████████████████▌             | 2500/3000 [6:49:09<1:26:13, 10.35s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.0634, 'grad_norm': 19395.140625, 'learning_rate': 5.857864376269051e-05, 'epoch': 80.66}
+  warnings.warn(                                                                                                              
+{'eval_loss': 0.0654778927564621, 'eval_runtime': 25.7851, 'eval_samples_per_second': 75.703, 'eval_steps_per_second': 1.202, 'epoch': 80.66}
+100%|███████████████████████████████████████████████████████████████████████████████████| 3000/3000 [8:13:32<00:00,  9.87s/it]
+{'loss': 0.0606, 'grad_norm': 13128.482421875, 'learning_rate': 0.0, 'epoch': 96.79}
+[34m[1mwandb[0m: Adding directory to artifact (./runs/progen2_dgoa_finetune_1)... Done. 0.6s                               
+{'eval_loss': 0.06415735930204391, 'eval_runtime': 22.6076, 'eval_samples_per_second': 86.343, 'eval_steps_per_second': 1.371, 'epoch': 96.79}
+{'train_runtime': 29612.0481, 'train_samples_per_second': 52.735, 'train_steps_per_second': 0.101, 'train_loss': 0.14523493194580078, 'epoch': 96.79}
+***** train metrics *****
+  epoch                    =      96.7869
+  total_flos               = 1310316324GF
+  train_loss               =       0.1452
+  train_runtime            =   8:13:32.04
+  train_samples_per_second =       52.735
+  train_steps_per_second   =        0.101
+2025-04-15 01:55:41,541 INFO: Training complete.
+/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:17<00:00,  1.75it/s]
+***** eval metrics *****
+  epoch                   =    96.7869
+  eval_loss               =     0.0642
+  eval_runtime            = 0:00:19.39
+  eval_samples_per_second =    100.637
+  eval_steps_per_second   =      1.598
+Evaluation metrics: {'eval_loss': 0.06415735930204391, 'eval_runtime': 19.3965, 'eval_samples_per_second': 100.637, 'eval_steps_per_second': 1.598, 'epoch': 96.78688524590164}

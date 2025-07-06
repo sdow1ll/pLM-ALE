@@ -1,0 +1,251 @@
+2025-03-22 19:43:32,555 INFO: Training configuration saved to runs/esm_150m_ecoli_finetuning_1/train_config.yaml
+2025-03-22 19:43:32,777 INFO: Found potential target modules: ['esm.encoder.layer.0.attention.self.key', 'esm.encoder.layer.0.attention.self.value', 'esm.encoder.layer.1.attention.self.key', 'esm.encoder.layer.1.attention.self.value', 'esm.encoder.layer.2.attention.self.key', 'esm.encoder.layer.2.attention.self.value', 'esm.encoder.layer.3.attention.self.key', 'esm.encoder.layer.3.attention.self.value', 'esm.encoder.layer.4.attention.self.key', 'esm.encoder.layer.4.attention.self.value', 'esm.encoder.layer.5.attention.self.key', 'esm.encoder.layer.5.attention.self.value', 'esm.encoder.layer.6.attention.self.key', 'esm.encoder.layer.6.attention.self.value', 'esm.encoder.layer.7.attention.self.key', 'esm.encoder.layer.7.attention.self.value', 'esm.encoder.layer.8.attention.self.key', 'esm.encoder.layer.8.attention.self.value', 'esm.encoder.layer.9.attention.self.key', 'esm.encoder.layer.9.attention.self.value', 'esm.encoder.layer.10.attention.self.key', 'esm.encoder.layer.10.attention.self.value', 'esm.encoder.layer.11.attention.self.key', 'esm.encoder.layer.11.attention.self.value', 'esm.encoder.layer.12.attention.self.key', 'esm.encoder.layer.12.attention.self.value', 'esm.encoder.layer.13.attention.self.key', 'esm.encoder.layer.13.attention.self.value', 'esm.encoder.layer.14.attention.self.key', 'esm.encoder.layer.14.attention.self.value', 'esm.encoder.layer.15.attention.self.key', 'esm.encoder.layer.15.attention.self.value', 'esm.encoder.layer.16.attention.self.key', 'esm.encoder.layer.16.attention.self.value', 'esm.encoder.layer.17.attention.self.key', 'esm.encoder.layer.17.attention.self.value', 'esm.encoder.layer.18.attention.self.key', 'esm.encoder.layer.18.attention.self.value', 'esm.encoder.layer.19.attention.self.key', 'esm.encoder.layer.19.attention.self.value', 'esm.encoder.layer.20.attention.self.key', 'esm.encoder.layer.20.attention.self.value', 'esm.encoder.layer.21.attention.self.key', 'esm.encoder.layer.21.attention.self.value', 'esm.encoder.layer.22.attention.self.key', 'esm.encoder.layer.22.attention.self.value', 'esm.encoder.layer.23.attention.self.key', 'esm.encoder.layer.23.attention.self.value', 'esm.encoder.layer.24.attention.self.key', 'esm.encoder.layer.24.attention.self.value', 'esm.encoder.layer.25.attention.self.key', 'esm.encoder.layer.25.attention.self.value', 'esm.encoder.layer.26.attention.self.key', 'esm.encoder.layer.26.attention.self.value', 'esm.encoder.layer.27.attention.self.key', 'esm.encoder.layer.27.attention.self.value', 'esm.encoder.layer.28.attention.self.key', 'esm.encoder.layer.28.attention.self.value', 'esm.encoder.layer.29.attention.self.key', 'esm.encoder.layer.29.attention.self.value']
+2025-03-22 19:43:32,778 INFO: Using target module names: ['key', 'value']
+2025-03-22 19:43:32,779 INFO: Parameters requiring gradients before LoRA: 148796794
+2025-03-22 19:43:32,845 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,845 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,845 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,845 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,845 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,846 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,847 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.6.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.7.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,848 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.8.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.9.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,849 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.10.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.11.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.12.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,850 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.13.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.14.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.15.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,851 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.16.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.17.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.18.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,852 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.19.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.20.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,853 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.21.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.22.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,854 INFO: Trainable parameter: base_model.model.esm.encoder.layer.23.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.24.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.25.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,855 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.26.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.27.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,856 INFO: Trainable parameter: base_model.model.esm.encoder.layer.28.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.key.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.esm.encoder.layer.29.attention.self.value.lora_B.default.weight (shape: torch.Size([640, 8]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.original_module.bias (shape: torch.Size([33]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.original_module.dense.weight (shape: torch.Size([640, 640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.original_module.dense.bias (shape: torch.Size([640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.original_module.layer_norm.weight (shape: torch.Size([640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.original_module.layer_norm.bias (shape: torch.Size([640]))
+2025-03-22 19:43:32,857 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.bias (shape: torch.Size([33]))
+2025-03-22 19:43:32,858 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.dense.weight (shape: torch.Size([640, 640]))
+2025-03-22 19:43:32,858 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.dense.bias (shape: torch.Size([640]))
+2025-03-22 19:43:32,858 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.layer_norm.weight (shape: torch.Size([640]))
+2025-03-22 19:43:32,858 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.layer_norm.bias (shape: torch.Size([640]))
+2025-03-22 19:43:32,858 INFO: Trainable parameter: base_model.model.lm_head.modules_to_save.default.decoder.weight (shape: torch.Size([33, 640]))
+2025-03-22 19:43:32,861 INFO: LoRA integration complete. Trainable parameters: 1458626 (0.97% of total)
+2025-03-22 19:43:32,898 INFO: Loaded 7489 training and 1404 evaluation sequences.
+2025-03-22 19:43:32,898 INFO: Adjusted max_length to 1024 to be a multiple of 8
+2025-03-22 19:43:32,899 INFO: Using masked language modeling (MLM) data collator for ESM model.
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+                                                                                                                         
+{'loss': 0.7036, 'grad_norm': 0.36674144864082336, 'learning_rate': 0.0002, 'epoch': 2.13}
+                                                                                                                         
+{'eval_loss': 0.057240989059209824, 'eval_runtime': 25.1124, 'eval_samples_per_second': 55.909, 'eval_steps_per_second': 7.008, 'epoch': 2.13}
+{'loss': 0.0444, 'grad_norm': 0.1654277890920639, 'learning_rate': 0.0004, 'epoch': 4.26}
+{'eval_loss': 0.03534835949540138, 'eval_runtime': 25.1035, 'eval_samples_per_second': 55.929, 'eval_steps_per_second': 7.011, 'epoch': 4.26}
+{'loss': 0.0324, 'grad_norm': 0.11143479496240616, 'learning_rate': 0.00039950845221876924, 'epoch': 6.38}
+{'eval_loss': 0.029573559761047363, 'eval_runtime': 25.0818, 'eval_samples_per_second': 55.977, 'eval_steps_per_second': 7.017, 'epoch': 6.38}
+{'loss': 0.0296, 'grad_norm': 0.10806699842214584, 'learning_rate': 0.00039803622506728913, 'epoch': 8.51}
+{'eval_loss': 0.02819042280316353, 'eval_runtime': 25.1134, 'eval_samples_per_second': 55.906, 'eval_steps_per_second': 7.008, 'epoch': 8.51}
+{'loss': 0.0275, 'grad_norm': 0.06541501730680466, 'learning_rate': 0.00039559055524545755, 'epoch': 10.64}
+{'eval_loss': 0.02619115635752678, 'eval_runtime': 25.1177, 'eval_samples_per_second': 55.897, 'eval_steps_per_second': 7.007, 'epoch': 10.64}
+{'loss': 0.0256, 'grad_norm': 0.10379982739686966, 'learning_rate': 0.00039218346438901996, 'epoch': 12.77}
+{'eval_loss': 0.026380416005849838, 'eval_runtime': 25.0991, 'eval_samples_per_second': 55.938, 'eval_steps_per_second': 7.012, 'epoch': 12.77}
+{'loss': 0.0254, 'grad_norm': 0.06887368112802505, 'learning_rate': 0.0003878316999774856, 'epoch': 14.9}
+{'eval_loss': 0.025637134909629822, 'eval_runtime': 25.0989, 'eval_samples_per_second': 55.939, 'eval_steps_per_second': 7.012, 'epoch': 14.9}
+{'loss': 0.0237, 'grad_norm': 0.1834346503019333, 'learning_rate': 0.00038255665301226377, 'epoch': 17.02}
+{'eval_loss': 0.023390261456370354, 'eval_runtime': 25.0829, 'eval_samples_per_second': 55.974, 'eval_steps_per_second': 7.017, 'epoch': 17.02}
+{'loss': 0.0235, 'grad_norm': 0.06870424747467041, 'learning_rate': 0.000376384252869671, 'epoch': 19.15}
+{'eval_loss': 0.024615176022052765, 'eval_runtime': 25.1163, 'eval_samples_per_second': 55.9, 'eval_steps_per_second': 7.007, 'epoch': 19.15}
+{'loss': 0.0233, 'grad_norm': 0.0386505126953125, 'learning_rate': 0.00036934483984565685, 'epoch': 21.28}
+{'eval_loss': 0.02323981560766697, 'eval_runtime': 25.1181, 'eval_samples_per_second': 55.896, 'eval_steps_per_second': 7.007, 'epoch': 21.28}
+{'loss': 0.0227, 'grad_norm': 0.041320621967315674, 'learning_rate': 0.0003614730160187525, 'epoch': 23.41}
+{'eval_loss': 0.02526099793612957, 'eval_runtime': 25.0993, 'eval_samples_per_second': 55.938, 'eval_steps_per_second': 7.012, 'epoch': 23.41}
+{'loss': 0.0223, 'grad_norm': 0.03871564194560051, 'learning_rate': 0.00035280747516432153, 'epoch': 25.53}
+{'eval_loss': 0.02344139665365219, 'eval_runtime': 25.116, 'eval_samples_per_second': 55.901, 'eval_steps_per_second': 7.007, 'epoch': 25.53}
+{'loss': 0.0219, 'grad_norm': 0.06696391105651855, 'learning_rate': 0.0003433908125561655, 'epoch': 27.66}
+{'eval_loss': 0.022845162078738213, 'eval_runtime': 25.1168, 'eval_samples_per_second': 55.899, 'eval_steps_per_second': 7.007, 'epoch': 27.66}
+{'loss': 0.0216, 'grad_norm': 0.0873018354177475, 'learning_rate': 0.0003332693155904008, 'epoch': 29.79}
+{'eval_loss': 0.02275082841515541, 'eval_runtime': 25.1041, 'eval_samples_per_second': 55.927, 'eval_steps_per_second': 7.011, 'epoch': 29.79}
+{'loss': 0.0209, 'grad_norm': 0.037150245159864426, 'learning_rate': 0.00032249273626079003, 'epoch': 31.92}
+{'eval_loss': 0.022895926609635353, 'eval_runtime': 25.1187, 'eval_samples_per_second': 55.895, 'eval_steps_per_second': 7.007, 'epoch': 31.92}
+{'loss': 0.0212, 'grad_norm': 0.04769063740968704, 'learning_rate': 0.00031111404660392046, 'epoch': 34.04}
+{'eval_loss': 0.023005414754152298, 'eval_runtime': 25.0968, 'eval_samples_per_second': 55.943, 'eval_steps_per_second': 7.013, 'epoch': 34.04}
+{'loss': 0.0208, 'grad_norm': 0.05030464753508568, 'learning_rate': 0.0002991891783163336, 'epoch': 36.17}
+{'eval_loss': 0.02116720750927925, 'eval_runtime': 25.1014, 'eval_samples_per_second': 55.933, 'eval_steps_per_second': 7.012, 'epoch': 36.17}
+{'loss': 0.02, 'grad_norm': 0.05457441881299019, 'learning_rate': 0.00028677674782351165, 'epoch': 38.3}
+{'eval_loss': 0.02124660275876522, 'eval_runtime': 25.1149, 'eval_samples_per_second': 55.903, 'eval_steps_per_second': 7.008, 'epoch': 38.3}
+{'loss': 0.0201, 'grad_norm': 0.10623781383037567, 'learning_rate': 0.00027393776815213904, 'epoch': 40.43}
+{'eval_loss': 0.02118150144815445, 'eval_runtime': 25.108, 'eval_samples_per_second': 55.918, 'eval_steps_per_second': 7.01, 'epoch': 40.43}
+{'loss': 0.0197, 'grad_norm': 0.030863288789987564, 'learning_rate': 0.00026073534902192297, 'epoch': 42.55}
+{'eval_loss': 0.021098515018820763, 'eval_runtime': 25.0976, 'eval_samples_per_second': 55.942, 'eval_steps_per_second': 7.013, 'epoch': 42.55}
+{'loss': 0.0193, 'grad_norm': 0.03133226931095123, 'learning_rate': 0.0002472343866311669, 'epoch': 44.68}
+{'eval_loss': 0.02024248242378235, 'eval_runtime': 25.0969, 'eval_samples_per_second': 55.943, 'eval_steps_per_second': 7.013, 'epoch': 44.68}
+{'loss': 0.0197, 'grad_norm': 0.03878457844257355, 'learning_rate': 0.00023352889794877566, 'epoch': 46.81}
+{'eval_loss': 0.020594121888279915, 'eval_runtime': 25.0982, 'eval_samples_per_second': 55.94, 'eval_steps_per_second': 7.012, 'epoch': 46.81}
+{'loss': 0.0192, 'grad_norm': 0.04299018532037735, 'learning_rate': 0.00021963134273932723, 'epoch': 48.94}
+{'eval_loss': 0.022273655980825424, 'eval_runtime': 25.1092, 'eval_samples_per_second': 55.916, 'eval_steps_per_second': 7.009, 'epoch': 48.94}
+{'loss': 0.0191, 'grad_norm': 0.0400405079126358, 'learning_rate': 0.00020563729010021788, 'epoch': 51.06}
+{'eval_loss': 0.021318046376109123, 'eval_runtime': 25.1233, 'eval_samples_per_second': 55.884, 'eval_steps_per_second': 7.005, 'epoch': 51.06}
+{'loss': 0.0186, 'grad_norm': 0.025443121790885925, 'learning_rate': 0.00019161552748669933, 'epoch': 53.19}
+{'eval_loss': 0.019851766526699066, 'eval_runtime': 25.1137, 'eval_samples_per_second': 55.906, 'eval_steps_per_second': 7.008, 'epoch': 53.19}
+{'loss': 0.0185, 'grad_norm': 0.0414082407951355, 'learning_rate': 0.0001776349785617879, 'epoch': 55.32}
+{'eval_loss': 0.02155342325568199, 'eval_runtime': 25.1, 'eval_samples_per_second': 55.936, 'eval_steps_per_second': 7.012, 'epoch': 55.32}
+{'loss': 0.0185, 'grad_norm': 0.05665623024106026, 'learning_rate': 0.00016379195047586882, 'epoch': 57.45}
+{'eval_loss': 0.02075582556426525, 'eval_runtime': 25.1035, 'eval_samples_per_second': 55.929, 'eval_steps_per_second': 7.011, 'epoch': 57.45}
+{'loss': 0.0181, 'grad_norm': 0.049856606870889664, 'learning_rate': 0.00015009902803164398, 'epoch': 59.58}
+{'eval_loss': 0.022001463919878006, 'eval_runtime': 25.094, 'eval_samples_per_second': 55.95, 'eval_steps_per_second': 7.014, 'epoch': 59.58}
+{'loss': 0.0183, 'grad_norm': 0.036711934953927994, 'learning_rate': 0.00013665139270794215, 'epoch': 61.7}
+{'eval_loss': 0.02165078930556774, 'eval_runtime': 25.106, 'eval_samples_per_second': 55.923, 'eval_steps_per_second': 7.01, 'epoch': 61.7}
+{'loss': 0.0173, 'grad_norm': 0.032551005482673645, 'learning_rate': 0.00012351514605782503, 'epoch': 63.83}
+{'eval_loss': 0.021617606282234192, 'eval_runtime': 25.1074, 'eval_samples_per_second': 55.92, 'eval_steps_per_second': 7.01, 'epoch': 63.83}
+{'loss': 0.0176, 'grad_norm': 0.03673706576228142, 'learning_rate': 0.00011075485901023834, 'epoch': 65.96}
+{'eval_loss': 0.01991790346801281, 'eval_runtime': 25.1187, 'eval_samples_per_second': 55.895, 'eval_steps_per_second': 7.007, 'epoch': 65.96}
+{'loss': 0.0176, 'grad_norm': 0.06193305552005768, 'learning_rate': 9.843325447304303e-05, 'epoch': 68.09}
+{'eval_loss': 0.020521927624940872, 'eval_runtime': 25.0984, 'eval_samples_per_second': 55.94, 'eval_steps_per_second': 7.012, 'epoch': 68.09}
+{'loss': 0.0172, 'grad_norm': 0.031639259308576584, 'learning_rate': 8.66108990199539e-05, 'epoch': 70.21}
+{'eval_loss': 0.020753497257828712, 'eval_runtime': 25.1012, 'eval_samples_per_second': 55.934, 'eval_steps_per_second': 7.012, 'epoch': 70.21}
+{'loss': 0.0173, 'grad_norm': 0.04122612625360489, 'learning_rate': 7.534590517688966e-05, 'epoch': 72.34}
+{'eval_loss': 0.02035517804324627, 'eval_runtime': 25.1011, 'eval_samples_per_second': 55.934, 'eval_steps_per_second': 7.012, 'epoch': 72.34}
+{'loss': 0.017, 'grad_norm': 0.043380241841077805, 'learning_rate': 6.471430345065134e-05, 'epoch': 74.47}
+{'eval_loss': 0.01964806765317917, 'eval_runtime': 25.1017, 'eval_samples_per_second': 55.933, 'eval_steps_per_second': 7.011, 'epoch': 74.47}
+{'loss': 0.0171, 'grad_norm': 0.055455803871154785, 'learning_rate': 5.47257591116765e-05, 'epoch': 76.6}
+{'eval_loss': 0.019677085801959038, 'eval_runtime': 25.1119, 'eval_samples_per_second': 55.91, 'eval_steps_per_second': 7.009, 'epoch': 76.6}
+{'loss': 0.0169, 'grad_norm': 0.04152704402804375, 'learning_rate': 4.545130708048808e-05, 'epoch': 78.73}
+{'eval_loss': 0.019417714327573776, 'eval_runtime': 25.1098, 'eval_samples_per_second': 55.914, 'eval_steps_per_second': 7.009, 'epoch': 78.73}
+{'loss': 0.0167, 'grad_norm': 0.03380022570490837, 'learning_rate': 3.693653572026667e-05, 'epoch': 80.85}
+{'eval_loss': 0.018864508718252182, 'eval_runtime': 25.1018, 'eval_samples_per_second': 55.932, 'eval_steps_per_second': 7.011, 'epoch': 80.85}
+{'loss': 0.017, 'grad_norm': 0.07383382320404053, 'learning_rate': 2.9237899866330544e-05, 'epoch': 82.98}
+{'eval_loss': 0.0197929497808218, 'eval_runtime': 25.1127, 'eval_samples_per_second': 55.908, 'eval_steps_per_second': 7.008, 'epoch': 82.98}
+{'loss': 0.017, 'grad_norm': 0.04534054547548294, 'learning_rate': 2.2362398407412076e-05, 'epoch': 85.11}
+{'eval_loss': 0.019580019637942314, 'eval_runtime': 25.1031, 'eval_samples_per_second': 55.929, 'eval_steps_per_second': 7.011, 'epoch': 85.11}
+{'loss': 0.0168, 'grad_norm': 0.03954879194498062, 'learning_rate': 1.63600706377536e-05, 'epoch': 87.23}
+{'eval_loss': 0.021579008549451828, 'eval_runtime': 25.111, 'eval_samples_per_second': 55.912, 'eval_steps_per_second': 7.009, 'epoch': 87.23}
+{'loss': 0.0168, 'grad_norm': 0.037485893815755844, 'learning_rate': 1.1260420866329035e-05, 'epoch': 89.36}
+{'eval_loss': 0.01991902105510235, 'eval_runtime': 25.1036, 'eval_samples_per_second': 55.928, 'eval_steps_per_second': 7.011, 'epoch': 89.36}
+{'loss': 0.0165, 'grad_norm': 0.0414191409945488, 'learning_rate': 7.095919827441044e-06, 'epoch': 91.49}
+{'eval_loss': 0.019509706646203995, 'eval_runtime': 25.1649, 'eval_samples_per_second': 55.792, 'eval_steps_per_second': 6.994, 'epoch': 91.49}
+{'loss': 0.0165, 'grad_norm': 0.04345947504043579, 'learning_rate': 3.870353500833312e-06, 'epoch': 93.62}
+{'eval_loss': 0.019510963931679726, 'eval_runtime': 25.0918, 'eval_samples_per_second': 55.955, 'eval_steps_per_second': 7.014, 'epoch': 93.62}
+{'loss': 0.0163, 'grad_norm': 0.050150562077760696, 'learning_rate': 1.6088580999280566e-06, 'epoch': 95.75}
+{'eval_loss': 0.020705517381429672, 'eval_runtime': 25.0978, 'eval_samples_per_second': 55.941, 'eval_steps_per_second': 7.013, 'epoch': 95.75}
+{'loss': 0.0169, 'grad_norm': 0.03902145102620125, 'learning_rate': 3.225499551910538e-07, 'epoch': 97.88}
+{'eval_loss': 0.01952798292040825, 'eval_runtime': 25.107, 'eval_samples_per_second': 55.921, 'eval_steps_per_second': 7.01, 'epoch': 97.88}
+{'train_runtime': 34587.9585, 'train_samples_per_second': 21.652, 'train_steps_per_second': 0.677, 'train_loss': 0.035078561978462416, 'epoch': 99.58}
+***** train metrics *****
+  epoch                    =     99.5763
+  total_flos               = 636507740GF
+  train_loss               =      0.0351
+  train_runtime            =  9:36:27.95
+  train_samples_per_second =      21.652
+  train_steps_per_second   =       0.677
+2025-03-23 05:20:03,037 INFO: Training complete.
+100%|██████████████████████████████████████████████████████████████████████████████████| 176/176 [00:24<00:00,  7.06it/s]
+***** eval metrics *****
+  epoch                   =    99.5763
+  eval_loss               =     0.0195
+  eval_runtime            = 0:00:25.16
+  eval_samples_per_second =     55.792
+  eval_steps_per_second   =      6.994
+Evaluation metrics: {'eval_loss': 0.019546927884221077, 'eval_runtime': 25.1648, 'eval_samples_per_second': 55.792, 'eval_steps_per_second': 6.994, 'epoch': 99.57630736392743}

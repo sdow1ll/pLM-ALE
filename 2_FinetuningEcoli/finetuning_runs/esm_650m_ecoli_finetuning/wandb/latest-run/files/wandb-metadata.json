@@ -1,0 +1,60 @@
+{
+  "os": "Linux-5.14.0-503.16.1.el9_5.x86_64-x86_64-with-glibc2.35",
+  "python": "CPython 3.9.13",
+  "startedAt": "2025-03-17T00:29:45.046979Z",
+  "args": [
+    "--config",
+    "optimized-config.yml"
+  ],
+  "program": "/home/idies/workspace/Storage/sdowell/persistent/ALEdb/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py",
+  "codePath": "finetuneESM2_ProGen2_LoRA.py",
+  "email": "sdowell@anl.gov",
+  "root": "runs/esm_650m_ecoli_finetuning",
+  "host": "4f1d43ae-f71f-11ef-9a20-0a580a810034-78559fc9b6-nq92k",
+  "executable": "/home/idies/miniconda3/envs/py39/bin/python",
+  "codePathLocal": "finetuneESM2_ProGen2_LoRA.py",
+  "cpu_count": 40,
+  "cpu_count_logical": 80,
+  "gpu": "Tesla V100-SXM2-32GB",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "25594492354560",
+      "used": "236721041408"
+    }
+  },
+  "memory": {
+    "total": "810708410368"
+  },
+  "cpu": {
+    "count": 40,
+    "countLogical": 80
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

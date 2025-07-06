@@ -1,0 +1,15 @@
+{"time":"2025-03-22T19:43:31.839213783Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpp57sqxo4/port-280274.txt","pid":280274,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-03-22T19:43:31.840566646Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":280274}
+{"time":"2025-03-22T19:43:31.840552029Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":38277,"Zone":""}}
+{"time":"2025-03-22T19:43:32.020067969Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:45506"}
+{"time":"2025-03-22T19:43:32.123357915Z","level":"INFO","msg":"handleInformInit: received","streamId":"ask8we04","id":"127.0.0.1:45506"}
+{"time":"2025-03-22T19:43:32.248035205Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"ask8we04","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:28.778200718Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"ask8we04","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:28.779580822Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"ask8we04","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777251834Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777288462Z","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777308259Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-03-23T05:20:29.777301196Z","level":"INFO","msg":"connection: closing","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777497342Z","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777576109Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:45506"}
+{"time":"2025-03-23T05:20:29.777606917Z","level":"INFO","msg":"server is closed"}

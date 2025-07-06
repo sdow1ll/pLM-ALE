@@ -1,0 +1,15 @@
+{"time":"2025-03-03T16:37:59.899906835-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"runs/esm_8m_ecoli_anti_overfitting/wandb/run-20250303_163759-1ri4pnux/logs/debug-core.log"}
+{"time":"2025-03-03T16:38:00.019174459-05:00","level":"INFO","msg":"created new stream","id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.019210268-05:00","level":"INFO","msg":"stream: started","id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.019312429-05:00","level":"INFO","msg":"handler: started","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.01930679-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.019343449-05:00","level":"INFO","msg":"sender: started","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.208500451-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T16:38:00.905982666-05:00","level":"INFO","msg":"stream: closing","id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:00.90602295-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T16:38:00.906596015-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-03T16:38:01.301881056-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-03T16:38:01.396434118-05:00","level":"INFO","msg":"handler: closed","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:01.396480751-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:01.396495374-05:00","level":"INFO","msg":"sender: closed","stream_id":"1ri4pnux"}
+{"time":"2025-03-03T16:38:01.405979054-05:00","level":"INFO","msg":"stream: closed","id":"1ri4pnux"}

@@ -1,0 +1,7 @@
+{"time":"2025-03-22T19:41:15.901784745Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"runs/esm_150m_ecoli_finetuning_1/wandb/run-20250322_194115-nfr5zkql/logs/debug-core.log"}
+{"time":"2025-03-22T19:41:16.723782255Z","level":"INFO","msg":"created new stream","id":"nfr5zkql"}
+{"time":"2025-03-22T19:41:16.723862585Z","level":"INFO","msg":"stream: started","id":"nfr5zkql"}
+{"time":"2025-03-22T19:41:16.723896157Z","level":"INFO","msg":"handler: started","stream_id":"nfr5zkql"}
+{"time":"2025-03-22T19:41:16.723883935Z","level":"INFO","msg":"writer: Do: started","stream_id":"nfr5zkql"}
+{"time":"2025-03-22T19:41:16.723970526Z","level":"INFO","msg":"sender: started","stream_id":"nfr5zkql"}
+{"time":"2025-03-22T19:41:16.930590358Z","level":"INFO","msg":"Starting system monitor"}

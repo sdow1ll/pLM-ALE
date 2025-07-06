@@ -1,0 +1,38 @@
+2025-04-03 02:25:16,089 INFO: Training configuration saved to runs/esm2_650m_ecoli_finetuning_2/train_config.yaml
+Traceback (most recent call last):
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/utils/hub.py", line 342, in cached_file
+    resolved_file = hf_hub_download(
+        path_or_repo_id,
+    ...<10 lines>...
+        local_files_only=local_files_only,
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'facebook/esm2_t33_650M/UR50D'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 613, in <module>
+    main()
+    ~~~~^^
+  File "/home/sdowell/scratch/Thesis/BenchmarkingFinetuning/finetuneESM2_ProGen2_LoRA.py", line 392, in main
+    model = EsmForMaskedLM.from_pretrained(config.base_model)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/modeling_utils.py", line 262, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/modeling_utils.py", line 3540, in from_pretrained
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<11 lines>...
+        _raise_exceptions_for_connection_errors=False,
+    )
+  File "/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/transformers/utils/hub.py", line 408, in cached_file
+    raise EnvironmentError(
+        f"Incorrect path_or_model_id: '{path_or_repo_id}'. Please provide either the path to a local folder or the repo_id of a model on the Hub."
+    ) from e
+OSError: Incorrect path_or_model_id: 'facebook/esm2_t33_650M/UR50D'. Please provide either the path to a local folder or the repo_id of a model on the Hub.

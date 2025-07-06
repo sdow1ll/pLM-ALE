@@ -1,0 +1,13 @@
+{"time":"2025-03-17T01:06:39.697632844Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp0grsux2k/port-1044155.txt","pid":1044155,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-03-17T01:06:39.698524045Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":1044155}
+{"time":"2025-03-17T01:06:39.698522603Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":36511,"Zone":""}}
+{"time":"2025-03-17T01:06:39.880071378Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:39.987600036Z","level":"INFO","msg":"handleInformInit: received","streamId":"kybon3bs","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:40.109574698Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"kybon3bs","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.422686969Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.423339255Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-03-17T01:06:51.423304661Z","level":"INFO","msg":"connection: closing","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.423612675Z","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.83162775Z","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.831664678Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:46458"}
+{"time":"2025-03-17T01:06:51.831698071Z","level":"INFO","msg":"server is closed"}

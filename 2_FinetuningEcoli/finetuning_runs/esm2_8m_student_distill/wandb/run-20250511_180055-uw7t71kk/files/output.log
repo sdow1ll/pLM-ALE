@@ -1,0 +1,66 @@
+2025-05-11 18:00:56,226 INFO: Training configuration saved to runs/esm2_8m_student_distill/train_config.yaml
+2025-05-11 18:00:56,415 INFO: Found potential target modules: ['esm.encoder.layer.0.attention.self.key', 'esm.encoder.layer.0.attention.self.value', 'esm.encoder.layer.1.attention.self.key', 'esm.encoder.layer.1.attention.self.value', 'esm.encoder.layer.2.attention.self.key', 'esm.encoder.layer.2.attention.self.value', 'esm.encoder.layer.3.attention.self.key', 'esm.encoder.layer.3.attention.self.value', 'esm.encoder.layer.4.attention.self.key', 'esm.encoder.layer.4.attention.self.value', 'esm.encoder.layer.5.attention.self.key', 'esm.encoder.layer.5.attention.self.value']
+2025-05-11 18:00:56,416 INFO: Using target module names: ['value', 'key']
+2025-05-11 18:00:56,416 INFO: Parameters requiring gradients before LoRA: 7840794
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.0.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.1.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,426 INFO: Trainable parameter: base_model.model.esm.encoder.layer.2.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.3.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.4.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.key.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_A.default.weight (shape: torch.Size([8, 320]))
+2025-05-11 18:00:56,427 INFO: Trainable parameter: base_model.model.esm.encoder.layer.5.attention.self.value.lora_B.default.weight (shape: torch.Size([320, 8]))
+2025-05-11 18:00:56,428 INFO: Trainable parameter: base_model.model.lm_head.bias (shape: torch.Size([33]))
+2025-05-11 18:00:56,428 INFO: Trainable parameter: base_model.model.lm_head.dense.weight (shape: torch.Size([320, 320]))
+2025-05-11 18:00:56,428 INFO: Trainable parameter: base_model.model.lm_head.dense.bias (shape: torch.Size([320]))
+2025-05-11 18:00:56,428 INFO: Trainable parameter: base_model.model.lm_head.layer_norm.weight (shape: torch.Size([320]))
+2025-05-11 18:00:56,428 INFO: Trainable parameter: base_model.model.lm_head.layer_norm.bias (shape: torch.Size([320]))
+2025-05-11 18:00:56,428 INFO: LoRA integration complete. Trainable parameters: 164833 (2.09% of total)
+2025-05-11 18:00:56,464 INFO: Loaded 7489 training and 1404 evaluation sequences.
+2025-05-11 18:00:56,464 INFO: Adjusted max_length to 1024 to be a multiple of 8
+2025-05-11 18:00:56,464 INFO: Using masked language modeling (MLM) data collator for ESM model.
+2025-05-11 18:00:56,465 INFO: Number of trainable parameters before training: 164833
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+  0%|                                                                                                         | 0/600 [00:00<?, ?it/s]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 83%|█████████████████████████████████████████████████████████████████████████████▌               | 500/600 [1:09:31<13:51,  8.31s/it]/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 1.4964, 'grad_norm': 26785.15234375, 'learning_rate': 0.0002, 'epoch': 166.54}
+  warnings.warn(                                                                                                                      
+{'eval_loss': 0.26905402541160583, 'eval_runtime': 2.7025, 'eval_samples_per_second': 519.528, 'eval_steps_per_second': 4.07, 'epoch': 166.54}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████| 600/600 [1:23:24<00:00,  8.34s/it]
+{'train_runtime': 5004.5773, 'train_samples_per_second': 299.286, 'train_steps_per_second': 0.12, 'train_loss': 1.2829736296335856, 'epoch': 199.81}
+[34m[1mwandb[0m: Adding directory to artifact (./runs/esm2_8m_student_distill)... Done. 0.1s
+***** train metrics *****
+  epoch                    =   199.8136
+  total_flos               = 54282206GF
+  train_loss               =      1.283
+  train_runtime            = 1:23:24.57
+  train_samples_per_second =    299.286
+  train_steps_per_second   =       0.12
+2025-05-11 19:24:21,830 INFO: Training complete.
+/home/sdowell/miniconda3/envs/thesis/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:01<00:00,  5.72it/s]
+***** eval metrics *****
+  epoch                   =   199.8136
+  eval_loss               =     0.1978
+  eval_runtime            = 0:00:02.66
+  eval_samples_per_second =    527.403
+  eval_steps_per_second   =      4.132
+Evaluation metrics: {'eval_loss': 0.19775612652301788, 'eval_runtime': 2.6621, 'eval_samples_per_second': 527.403, 'eval_steps_per_second': 4.132, 'epoch': 199.8135593220339}
