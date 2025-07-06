@@ -1,0 +1,84 @@
+# Data paths
+train_path: '/home/idies/workspace/Storage/sdowell/persistent/ALEdb/split_data/train.fasta'
+eval_path: '/home/idies/workspace/Storage/sdowell/persistent/ALEdb/split_data/valid.fasta'
+base_model: 'facebook/esm2_t6_8M_UR50D'
+
+# Weights & Biases configuration
+wandb_project: 'FIX_esm_8m_ecoli_finetuning'
+wandb_tags: 
+  - 'regularization'
+  - 'early-stopping'
+  - 'lr-scheduling'
+  - 'memory-optimization'
+wandb_notes: 'Memory-optimized configuration with gradient accumulation and reduced batch size'
+
+# Transfer learning configuration
+num_layers_to_unfreeze: 2
+unfreeze_embeddings: false
+
+# Model architecture parameters
+hidden_dropout_prob: 0.2
+attention_probs_dropout_prob: 0.2
+
+# Data preparation parameters
+mlm_probability: 0.15
+
+# Early stopping parameters
+early_stopping_patience: 5
+early_stopping_threshold: 0.001
+
+# Logging and monitoring
+log_model_weights: true
+
+# Training arguments with anti-overfitting and memory optimization measures
+training_args:
+  # Basic settings
+  output_dir: runs/esm_8m_ecoli_finetuning_memory_optimized
+  run_name: "ESM2-8M-memory-optimized"
+  
+  # Batch size - REDUCED FOR MEMORY SAVINGS
+  per_device_train_batch_size: 16  # Reduced from 64
+  per_device_eval_batch_size: 16   # Reduced from 64
+  
+  # Gradient accumulation for effective larger batch size
+  gradient_accumulation_steps: 4  # Effectively gives batch size of 64
+  
+  # Training duration
+  num_train_epochs: 100
+  
+  # Evaluation strategy for early stopping
+  evaluation_strategy: 'steps'
+  eval_steps: 100
+  save_strategy: 'steps'
+  save_steps: 100
+  save_total_limit: 3
+  load_best_model_at_end: true
+  metric_for_best_model: 'eval_loss'
+  greater_is_better: false
+  
+  # Learning rate and optimization
+  learning_rate: 0.00005  # Keep the same since effective batch size is the same
+  weight_decay: 0.01
+  lr_scheduler_type: 'cosine'
+  warmup_ratio: 0.1
+  
+  # Memory efficient optimizer settings
+  optim: 'adamw_torch'
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+  
+  # Gradient clipping
+  max_grad_norm: 1.0
+  
+  # Mixed precision training
+  fp16: true
+  fp16_full_eval: true  # Add full eval to save more memory
+  
+  # Logging
+  logging_steps: 50
+  report_to: ['wandb']
+  
+  # Dataloader optimization
+  dataloader_num_workers: 4
+  dataloader_pin_memory: true
