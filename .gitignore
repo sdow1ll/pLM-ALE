@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+*.log
+*.zip
+wandb/
+__pycache__/
+*.pt
+*.pth
