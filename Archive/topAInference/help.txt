@@ -1,0 +1,7 @@
+in this folder, i load my lora finetuned models and i run inference on them for the following mutation found in topA:
+
+A167V
+
+i do this because i wanna see if my models that were finetuned on specific other mutations (in this case for topA it was H33Y), can effectively pick out other mutations that were not in the training set (A167V).
+
+i am gonna run inference on this mutation using the lora esm2 150m model
