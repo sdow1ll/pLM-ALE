@@ -1,0 +1,13 @@
+train_path: /nfs/lambda_stor_01/homes/abrace/projects/sdl-amp/data/unique_sequences.split/train.fasta
+eval_path: /nfs/lambda_stor_01/homes/abrace/projects/sdl-amp/data/unique_sequences.split/valid.fasta
+base_model: facebook/esm2_t33_650M_UR50D
+wandb_project: sdl-amp
+
+training_args:
+  output_dir: runs/esm2-650m-finetune-v1
+  num_train_epochs: 200
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 32
+  eval_steps: 50
+  save_steps: 50

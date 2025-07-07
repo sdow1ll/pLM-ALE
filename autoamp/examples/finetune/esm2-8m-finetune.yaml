@@ -1,0 +1,11 @@
+train_path: /lus/eagle/projects/FoundEpidem/braceal/projects/sdl-amp/data/unique_sequences.split/train.fasta
+eval_path: /lus/eagle/projects/FoundEpidem/braceal/projects/sdl-amp/data/unique_sequences.split/valid.fasta
+base_model: facebook/esm2_t6_8M_UR50D
+wandb_project: sdl-amp
+
+training_args:
+  output_dir: runs/esm2-8m-finetune-v1
+  num_train_epochs: 200
+  per_device_train_batch_size: 256
+  per_device_eval_batch_size: 256
+  eval_steps: 50
