@@ -1,0 +1,12 @@
+{
+    "pretrained": {
+        "average_perplexity": 4.040611042101974,
+        "std_dev": 0.021082923982778543
+    },
+    "finetuned": {
+        "average_perplexity": 1.0650942240705832,
+        "std_dev": 0.0014216261235281845
+    },
+    "delta": -2.9755168180313905,
+    "relative_change": -73.64026844027757
+}

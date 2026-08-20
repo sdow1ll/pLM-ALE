@@ -1,0 +1,32 @@
+Hi,
+
+some information about DgoA. This is the protein that is in the ADP-1 bacteria. DgoA_BLAST.fasta was taken from NCBI and it consists of 3617 sequences. The plan is to artificially mutate each of these guys with the following SNP mutations one at a time:
+
+1
+F33I
+Auxotroph
+-
+2
+D58N
+Auxotroph
+-
+3
+Q72H
+Auxotroph
+-
+4
+A75V
+Auxotroph
+-
+5
+V85A
+Auxotroph
+-
+6
+V154F
+Auxotroph
+-
+7
+Y180F
+
+this is gonna make a pretty gnarly dataset. 7 * 3617 sequences. so 25319 total sequences. i'll do a 80 10 10 split like in my previous finetuning and then prob use esm2 and progen2 at the 150M so it doesn't take too long. also cos 650M is not as effective (afaik).
