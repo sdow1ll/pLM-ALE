@@ -1,0 +1,49 @@
+# Data paths
+train_path: "./data/final_cluster95/dgoA/train.faa"
+eval_path: "./data/final_cluster95/dgoA/val.faa"
+# test_path: "./data/final_cluster95/dgoA/test.faa"
+
+# Base model
+base_model: "hugohrban/progen2-small"
+
+# Weights & Biases
+wandb_project: "final_progen2_151m_dgoa_cluster95_final"
+
+training_args:
+  output_dir: "runs/progen2_151m_dgoa_cluster95_final_final"
+  overwrite_output_dir: true
+  run_name: "final_progen2_151m_dgoa_cluster95"
+
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  gradient_accumulation_steps: 8
+
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  lr_scheduler_type: "cosine"
+  warmup_steps: 500
+
+  fp16: true
+
+  num_train_epochs: 50
+
+  evaluation_strategy: "steps"
+  eval_steps: 10
+  do_eval: true
+  prediction_loss_only: true
+  eval_on_start: false
+  logging_strategy: "steps"
+  logging_steps: 10
+  logging_first_step: false
+  save_strategy: "no"
+  save_steps: 10
+
+  load_best_model_at_end: false
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+
+  save_total_limit: 3
+  report_to: ["wandb"]
+
+  remove_unused_columns: false
+  dataloader_num_workers: 1

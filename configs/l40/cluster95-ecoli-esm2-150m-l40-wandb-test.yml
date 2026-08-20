@@ -1,0 +1,51 @@
+# L40/L40S config: ESM2 150M fine-tuning on E. coli cluster95 splits
+# Frequent step logging to verify W&B experiment tracking for train loss and validation loss.
+
+train_path: "./data/final_cluster95/ecoli/train.faa"
+eval_path: "./data/final_cluster95/ecoli/val.faa"
+# test_path: "./data/final_cluster95/ecoli/test.faa"
+
+base_model: "facebook/esm2_t30_150M_UR50D"
+
+wandb_project: "esm2_150m_ecoli_cluster95_l40_wandb_test"
+
+training_args:
+  output_dir: "runs/esm2_150m_ecoli_cluster95_l40_wandb_test"
+  overwrite_output_dir: true
+  run_name: "esm2_150m_ecoli_cluster95_l40_wandb_test"
+
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 16
+
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  lr_scheduler_type: "cosine"
+  warmup_steps: 1000
+
+  fp16: true
+  num_train_epochs: 100
+
+  # Frequent synced logging/eval/save so W&B curves appear quickly.
+  logging_strategy: "steps"
+  logging_steps: 10
+  logging_first_step: false
+
+  evaluation_strategy: "steps"
+  eval_steps: 10
+  do_eval: true
+  prediction_loss_only: true
+  eval_on_start: false
+
+  save_strategy: "no"
+  save_steps: 10
+
+  load_best_model_at_end: false
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+
+  save_total_limit: 3
+  report_to: ["wandb"]
+
+  remove_unused_columns: false
+  dataloader_num_workers: 1
