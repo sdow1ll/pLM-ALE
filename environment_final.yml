@@ -1,0 +1,50 @@
+name: thesis
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  # Core system libs (minimal, let conda resolve)
+  - ca-certificates
+  - openssl
+  - libgcc-ng
+  - libstdcxx-ng
+
+  - pip:
+      # PyTorch CUDA 11.8 index
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+
+      # PyTorch (DO NOT add +cu118 here)
+      - torch==2.6.0
+      - torchaudio==2.6.0
+
+      # ML / pLM stack
+      - transformers==4.49.0
+      - peft==0.14.0
+      - accelerate==1.5.2
+      - datasets
+      - safetensors
+      - tokenizers==0.21.1
+
+      # Core scientific stack
+      - numpy==2.2.4
+      - pandas
+      - scipy
+      - scikit-learn
+      - tqdm
+      - regex
+
+      # Logging / experiment tracking
+      - wandb==0.19.8
+
+      # Jupyter ecosystem (optional but you had it)
+      - ipykernel
+      - ipython
+      - jupyterlab
+      - notebook
+
+      # Utilities
+      - pyyaml
+      - requests
