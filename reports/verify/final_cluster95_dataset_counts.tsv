@@ -1,0 +1,7 @@
+dataset	split	sequence_count
+ecoli	train	12881
+ecoli	val	1610
+ecoli	test	1610
+dgoA	train	36440
+dgoA	val	4107
+dgoA	test	4051

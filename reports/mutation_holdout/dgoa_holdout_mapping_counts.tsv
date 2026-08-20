@@ -1,0 +1,8 @@
+heldout_mutation	mapping_rows	mapping_file
+F33I	428	data/mutation_holdout/dgoA/holdout_F33I/test_heldout_mapping.tsv
+D58N	375	data/mutation_holdout/dgoA/holdout_D58N/test_heldout_mapping.tsv
+Q72H	391	data/mutation_holdout/dgoA/holdout_Q72H/test_heldout_mapping.tsv
+A75V	231	data/mutation_holdout/dgoA/holdout_A75V/test_heldout_mapping.tsv
+V85A	873	data/mutation_holdout/dgoA/holdout_V85A/test_heldout_mapping.tsv
+V154F	954	data/mutation_holdout/dgoA/holdout_V154F/test_heldout_mapping.tsv
+Y180F	799	data/mutation_holdout/dgoA/holdout_Y180F/test_heldout_mapping.tsv

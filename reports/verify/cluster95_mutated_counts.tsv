@@ -1,0 +1,13 @@
+gene	split	mutated_sequence_count
+topA	train	7718
+topA	val	965
+topA	test	965
+yeiB	train	2033
+yeiB	val	254
+yeiB	test	254
+spoT	train	3130
+spoT	val	391
+spoT	test	391
+dgoA	train	36440
+dgoA	val	4107
+dgoA	test	4051
